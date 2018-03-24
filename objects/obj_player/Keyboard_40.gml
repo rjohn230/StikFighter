@@ -1,3 +1,15 @@
-/// @description duck
+/// @description kneel
 // You can write your code in this editor
-duck()
+switch curr_stance_state
+{
+	case stance_state.standing:
+	{
+		kneel();
+		break;
+	}
+	case stance_state.blocking:
+	{
+		kneel();
+		break;
+	}
+}
