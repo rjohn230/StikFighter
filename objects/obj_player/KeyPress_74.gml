@@ -13,6 +13,7 @@ switch curr_stance_state
 	sprite_index=spr_base_right_punch;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
+	
 	alarm[0]=30*.25 //time it stay in this sprite
 	alarm[1]=30*.75; //time reset combo wait too long
 }
@@ -21,6 +22,14 @@ else
 sprite_index=spr_base_left_punch;
 combo[0]=combo[0]+1;
 strike_ready=false;
+if(collision_circle(obj_player_two.x,obj_player_two.y,16,obj_player_two,false,true))
+{
+	with(obj_player_two)
+	{
+		sprite_index=spr_hurt_high;
+		alarm[5]=30*.5
+	}
+}
 alarm[0]=30*.10; // time it stay in this sprite
 alarm[1]=30*.5; //time resets combos
 }

@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "85189297-a61e-4b89-ab82-6bacb8f219dc",
+            "Value": {
+                "id": "c6e65f25-9667-4a35-aabd-6d883ba7a5d7",
+                "resourcePath": "sprites\\spr_hurt_air_fall\\spr_hurt_air_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85a6ea3b-4a17-4c34-b80a-96d9723c1b8e",
             "Value": {
                 "id": "a67b5ceb-5151-461a-9f56-1e347b4f565e",
@@ -212,6 +220,14 @@
                 "id": "57063dcc-578a-401c-8183-e0446c4d5cb2",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "8f2e93d2-663d-41a5-8be7-c1e00f1e58a1",
+            "Value": {
+                "id": "0584749c-bba6-48a8-bd65-7163d0abe91a",
+                "resourcePath": "sprites\\spr_hurt_high\\spr_hurt_high.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -291,6 +307,14 @@
             "Value": {
                 "id": "1ff80d61-abaa-4846-81c3-c1ced4c7935e",
                 "resourcePath": "sprites\\spr_kneeling\\spr_kneeling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e34c422e-59d9-4779-a288-821e4e0b7dc7",
+            "Value": {
+                "id": "99e42fdb-57b5-492b-84e8-8a6e2ee132a1",
+                "resourcePath": "sprites\\spr_hurt_mid\\spr_hurt_mid.yy",
                 "resourceType": "GMSprite"
             }
         },
