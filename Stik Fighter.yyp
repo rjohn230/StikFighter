@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "023b4abb-350d-4875-bb54-79ecb8f60de6",
+            "Value": {
+                "id": "b74a066a-e7c5-4c59-a587-c2ac8a1c8091",
+                "resourcePath": "sprites\\spr_ppk_combo\\spr_ppk_combo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08101c41-7487-420c-8538-060f4e775687",
             "Value": {
                 "id": "323875e1-6a3b-48d0-8e6f-c6ad446cb099",
@@ -71,6 +79,14 @@
             }
         },
         {
+            "Key": "102284aa-8e33-4be7-bc0e-618cbc724c5f",
+            "Value": {
+                "id": "1e1fa0b7-b16f-4b78-b49e-c336c3bbf68a",
+                "resourcePath": "sprites\\spr_punch\\spr_punch.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10a1980d-671a-40c8-b8f6-3efd8a209db9",
             "Value": {
                 "id": "58b1d3bb-95f1-4458-bada-a7cac6a8f2ba",
@@ -84,6 +100,14 @@
                 "id": "d627f9c3-b53d-4c8d-a976-e41b3db5dd28",
                 "resourcePath": "scripts\\moveright\\moveright.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "14a57f5c-a951-4cfa-9458-389a0cc96233",
+            "Value": {
+                "id": "9dfb8713-a83f-4105-b612-8899b7f9bc32",
+                "resourcePath": "sprites\\spr_crouched\\spr_crouched.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -124,6 +148,14 @@
                 "id": "188220ca-ec12-41d4-b61f-949818964181",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "449b2bde-0bb4-4619-8816-e35c87962404",
+            "Value": {
+                "id": "888295ee-15f7-4935-aeb1-3751800eb5e3",
+                "resourcePath": "sprites\\spr_kick\\spr_kick.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -268,6 +300,14 @@
                 "id": "5016ef51-639e-494d-8cfc-ad48cffc83a7",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ad73f539-e78a-4abe-a8b6-36272e16703b",
+            "Value": {
+                "id": "dd9ef43a-09eb-4c39-bc5c-0339224c6213",
+                "resourcePath": "sprites\\spr_idle\\spr_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
