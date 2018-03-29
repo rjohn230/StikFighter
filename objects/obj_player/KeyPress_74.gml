@@ -22,7 +22,7 @@ else
 sprite_index=spr_base_left_punch;
 combo[0]=combo[0]+1;
 strike_ready=false;
-if(collision_circle(obj_player_two.x,obj_player_two.y,16,obj_player_two,false,true))
+if(collision_circle(x,y,16,obj_player_two,false,true))
 {
 	with(obj_player_two)
 	{
