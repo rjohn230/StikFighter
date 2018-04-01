@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "10b4fabf-c248-4082-82f5-2ed2f60daaab",
+            "Value": {
+                "id": "b1ed5d49-2dfe-4ed4-bbe4-7a9c192a8887",
+                "resourcePath": "fonts\\font_character_select\\font_character_select.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "130560e2-9846-452f-ad94-85a1d3f2d331",
             "Value": {
                 "id": "d627f9c3-b53d-4c8d-a976-e41b3db5dd28",
@@ -143,6 +151,22 @@
             }
         },
         {
+            "Key": "2a63aaac-6e18-44be-aa5c-af4a6524f4d8",
+            "Value": {
+                "id": "5f735586-ee21-419c-bf13-5e653e0fbc7e",
+                "resourcePath": "rooms\\menu_room\\menu_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2cb0d282-e820-49ee-a652-b7c70bccc770",
+            "Value": {
+                "id": "fac9e2aa-6c96-4acc-b491-a25ecc15d554",
+                "resourcePath": "rooms\\charcater_select_two_room\\charcater_select_two_room.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3ead1fbb-ad32-427c-8567-30713c6eb01b",
             "Value": {
                 "id": "188220ca-ec12-41d4-b61f-949818964181",
@@ -151,11 +175,27 @@
             }
         },
         {
+            "Key": "40ccd986-6cfd-4b66-bbac-e29dd4452fb6",
+            "Value": {
+                "id": "8b29a9e8-118c-4da9-949e-b778b400aaa3",
+                "resourcePath": "rooms\\select_room_single_tutorial\\select_room_single_tutorial.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "449b2bde-0bb4-4619-8816-e35c87962404",
             "Value": {
                 "id": "888295ee-15f7-4935-aeb1-3751800eb5e3",
                 "resourcePath": "sprites\\spr_kick\\spr_kick.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "53f4f8d7-188d-464f-a012-fab87df9209c",
+            "Value": {
+                "id": "3f53daca-fa88-479a-8422-16e61db4081c",
+                "resourcePath": "objects\\obj_start_menu\\obj_start_menu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -188,6 +228,14 @@
                 "id": "d271baf3-89bc-4d73-bd97-01e9d5599b71",
                 "resourcePath": "sprites\\spr_base_sliding_head_kick\\spr_base_sliding_head_kick.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "73a10f82-e0f3-45dc-a715-99e3ea3cb079",
+            "Value": {
+                "id": "aea3efdb-601a-4048-9e3b-490e13798fab",
+                "resourcePath": "objects\\obj_character_select_two\\obj_character_select_two.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -250,7 +298,7 @@
             "Key": "88bb9593-6368-479c-b9d0-bf56fcda79c1",
             "Value": {
                 "id": "57063dcc-578a-401c-8183-e0446c4d5cb2",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\tutorial_room\\tutorial_room.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -268,6 +316,14 @@
                 "id": "be65175d-0eed-4145-a82d-add9fa2baece",
                 "resourcePath": "sprites\\spr_base_right_punch\\spr_base_right_punch.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "96f4f071-347f-40ff-808e-55f7a41b3a06",
+            "Value": {
+                "id": "b091e21c-2024-4629-afb5-7eb05cbf0594",
+                "resourcePath": "fonts\\font_start_menu\\font_start_menu.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -332,6 +388,14 @@
                 "id": "7fd1c9ff-1b83-42f4-84ac-b1496660fb86",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf944284-53ca-4d3c-b584-86d415c5ca52",
+            "Value": {
+                "id": "81d826c3-e2e0-4aaa-967d-0495f6853202",
+                "resourcePath": "timelines\\time_start_game\\time_start_game.yy",
+                "resourceType": "GMTimeline"
             }
         },
         {
