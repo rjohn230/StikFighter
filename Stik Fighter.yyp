@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "ab937f02-5d0d-4a54-8960-2fa517fb71cc",
+            "Value": {
+                "id": "35a9c53d-7073-4dd9-a88e-cbf0bb33b174",
+                "resourcePath": "sprites\\spr_leg_sweep\\spr_leg_sweep.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ad73f539-e78a-4abe-a8b6-36272e16703b",
             "Value": {
                 "id": "dd9ef43a-09eb-4c39-bc5c-0339224c6213",
