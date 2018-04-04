@@ -6,8 +6,8 @@ switch choice
 {
 	case options.two_player:
 	{
-		room_goto(Im_on_fire); 
-		//room_goto(charcater_select_two_room)
+		
+		room_goto(charcater_select_two_room)
 		break;
 	}
 	case options.single_player:
