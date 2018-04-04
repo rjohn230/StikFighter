@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "6252663c-d55f-4565-b124-06470420318d",
+            "Value": {
+                "id": "32bd4ae1-e62b-486f-9325-f9dee2bdfef7",
+                "resourcePath": "objects\\obj_fight\\obj_fight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "64d8bb3d-104b-4249-825e-e693d163fa24",
             "Value": {
                 "id": "17177f72-7b7c-4671-b234-c3c9b57efe03",
@@ -220,6 +228,14 @@
                 "id": "520c6626-0692-441f-ba6f-bbfd6522667d",
                 "resourcePath": "sprites\\spr_kneeling_leg_sweep\\spr_kneeling_leg_sweep.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "699278e4-0d50-4758-9bdd-9ee017293f01",
+            "Value": {
+                "id": "77148754-5121-4097-b8ae-29485b136df1",
+                "resourcePath": "objects\\obj_fire\\obj_fire.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -276,6 +292,14 @@
                 "id": "622ba42a-0507-4389-b357-4e4d7bf3f8ad",
                 "resourcePath": "sprites\\spr_block\\spr_block.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "80674194-b114-4127-b14c-3a9ac8028b08",
+            "Value": {
+                "id": "bd5df3f0-e61c-4c5b-9e28-ca5c36fd25ff",
+                "resourcePath": "rooms\\Im_on_fire\\Im_on_fire.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -391,6 +415,22 @@
             }
         },
         {
+            "Key": "b39bc9c3-773f-4096-b544-c969f796e123",
+            "Value": {
+                "id": "cafe485f-8474-4a40-9329-31e5798f41d5",
+                "resourcePath": "sprites\\spr_fire\\spr_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b8c17ebd-9437-4046-9554-de4caa6c5f50",
+            "Value": {
+                "id": "7d31f681-791e-4e2d-affe-d9f35f56780e",
+                "resourcePath": "sprites\\spr_fight\\spr_fight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c3aaeff4-8c86-4363-a98d-fa2b326a9abc",
             "Value": {
                 "id": "5d4efc8b-d10d-4d2e-a9b7-0f30673e5288",
@@ -427,6 +467,14 @@
             "Value": {
                 "id": "1ff80d61-abaa-4846-81c3-c1ced4c7935e",
                 "resourcePath": "sprites\\spr_kneeling\\spr_kneeling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de8fd809-3e5d-4622-9388-656ca4531ad7",
+            "Value": {
+                "id": "8a7cc46f-dd4f-4f21-9d9f-cd59de235056",
+                "resourcePath": "sprites\\paper_background\\paper_background.yy",
                 "resourceType": "GMSprite"
             }
         },
