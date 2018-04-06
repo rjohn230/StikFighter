@@ -1,5 +1,6 @@
 /// @description Press Up
 // You can write your code in this editor
+//audio_play_sound();
 switch choice
 {
 	case options.two_player:
