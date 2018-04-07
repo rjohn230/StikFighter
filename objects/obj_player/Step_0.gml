@@ -1,6 +1,20 @@
 /// @description gravity
 // You can write your code in this editor
 
+// attack collision booleans
+
+
+left_punch_landed= (image_xscale==1 && true && collision_circle(x+21,y+4,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y+4,5,obj_player_two,true,true));
+right_punch_landed=(image_xscale==1 && true && collision_circle(x+30,y+2,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-30,y+2,5,obj_player_two,true,true));
+uppercut_landed=(image_xscale==1 && true && collision_circle(x+16,y+1,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y+1,5,obj_player_two,true,true));
+jumping_punch_landed=false;
+front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-22,y-11,5,obj_player_two,true,true));
+side_kick_landed=(image_xscale==1 && true && collision_circle(x+17,y-16,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-17,y-16,5,obj_player_two,true,true));
+air_kick_landed=false;
+leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player_two,true,true));
+head_kick_landed=false
+
+
 //gravity code
 not_block_bellow = place_empty(x,y+1);
 

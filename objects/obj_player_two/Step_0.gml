@@ -29,14 +29,5 @@ if(instance_exists(obj_player)){
 
 
 
-//hurting code
-
-switch(curr_stance_state)
-{
-	case two_stance_state.hurting_high:
-	{
-		
-	}
-}
 
 

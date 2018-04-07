@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "64b9828c-a9ab-403d-b529-2d52c137d216",
+            "Value": {
+                "id": "932b7bf9-3027-4ce0-a720-def94019fcdd",
+                "resourcePath": "timelines\\time_if_done_falling_hurt\\time_if_done_falling_hurt.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "64d8bb3d-104b-4249-825e-e693d163fa24",
             "Value": {
                 "id": "17177f72-7b7c-4671-b234-c3c9b57efe03",
