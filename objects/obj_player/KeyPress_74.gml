@@ -1,5 +1,10 @@
 /// @description punch
 // You can write your code in this editor
+left_punch_landed=false;
+right_punch_landed=false;
+uppercut_landed=false;
+jumping_punch_landed=false;
+
 switch curr_stance_state
 
 {
@@ -10,7 +15,7 @@ switch curr_stance_state
 	
  if(combo[0]==1)
 {
-	sprite_index=spr_base_right_punch;
+	sprite_index=spr_punch_right;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
 	
@@ -19,7 +24,7 @@ switch curr_stance_state
 }
 else
 {
-sprite_index=spr_base_left_punch;
+sprite_index=spr_punch;
 combo[0]=combo[0]+1;
 strike_ready=false;
 if(collision_circle(x,y,16,obj_player_two,false,true))
@@ -53,7 +58,7 @@ alarm[1]=30*.5; //time resets combos
 	{
 		if(strike_ready)
 		{
-		sprite_index=spr_kneeling_uppercut;
+		sprite_index=spr_uppercut;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain
 		}

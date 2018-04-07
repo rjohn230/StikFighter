@@ -3,7 +3,7 @@
 combo[0]=0; // Punch Punch Kick combo
 combo[1]=0; // Kick Kick
 flipped=false;
-enum stance_state
+enum two_stance_state
 {
 	standing,
 	jumping,
@@ -12,6 +12,7 @@ enum stance_state
 	hurting_high,
 	hurting_fall
 }
+//hurt_process=false;
 curr_stance_state= stance_state.standing;
 strike_ready=true;
 

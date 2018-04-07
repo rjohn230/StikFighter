@@ -12,4 +12,4 @@ if(combo[1]>1)
 	combo[1]=0;	
 }
 
-sprite_index=spr_base_player;
+sprite_index=spr_idle;

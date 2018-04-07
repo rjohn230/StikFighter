@@ -20,12 +20,10 @@ if(vspeed>12) vspeed=12;
 
 //where the player faces
 if(instance_exists(obj_player_two)){
-	if(obj_player_two.x >= x){
+	if(obj_player_two.x >= x && !not_block_bellow){
 		image_xscale = 1;
-	}else if(obj_player_two.x < x){
+	}else if(obj_player_two.x < x && !not_block_bellow){
 		image_xscale = -1;
-	}else{
-		image_xscale = 1;	
 	}
 }
 
@@ -70,7 +68,7 @@ switch curr_stance_state
 		if(!keyboard_check(vk_down))
 		{
 			curr_stance_state=stance_state.standing;
-			sprite_index=spr_base_player;
+			sprite_index=spr_idle;
 		}
 	 break;	
 	}

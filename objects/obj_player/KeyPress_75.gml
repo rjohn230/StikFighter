@@ -9,7 +9,7 @@ switch curr_stance_state
 	{
 		if(combo[0]==2)
 {
-	sprite_index=spr_base_sliding_head_kick;
+	sprite_index=spr_combo_kick;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
 	alarm[0]=30*.5 // time to chain
@@ -17,7 +17,7 @@ switch curr_stance_state
 }
 	else if(combo[1]==1)
 	{
-		sprite_index=spr_side_kick;
+		sprite_index=spr_font_kick;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
 		alarm[0]=30*.5 // time to chain
@@ -39,7 +39,7 @@ switch curr_stance_state
 	{
 		if(strike_ready)
 		{
-		sprite_index=spr_jumping_side_kick;
+		sprite_index=spr_air_kick;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain
 		}
@@ -49,7 +49,7 @@ switch curr_stance_state
 	{
 		if(strike_ready)
 		{
-		sprite_index=spr_kneeling_leg_sweep;
+		sprite_index=spr_leg_sweep;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain
 		}
