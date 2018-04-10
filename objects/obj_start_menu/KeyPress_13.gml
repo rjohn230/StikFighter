@@ -2,10 +2,12 @@
 // You can write your code in this editor
 /// @description Press Up
 // You can write your code in this editor
+audio_stop_sound(sound_menu);
 switch choice
 {
 	case options.two_player:
 	{
+		
 		room_goto(charcater_select_two_room)
 		break;
 	}
