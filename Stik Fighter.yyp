@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "da9785ba-d5d8-4260-a76e-800b06901270",
+            "Value": {
+                "id": "1139018a-37e7-4c5d-9caa-5df1bd9f2ea4",
+                "resourcePath": "sprites\\spr_kick_side\\spr_kick_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "db35a22b-7512-44bc-9aa7-1a1074b8d9d7",
             "Value": {
                 "id": "5e6bf927-79a5-436c-b827-379df13ad12e",
