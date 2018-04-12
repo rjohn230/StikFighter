@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0dc86d1c-9862-4931-9038-8743e239a69b",
+            "Value": {
+                "id": "d10f0819-6b8a-40f3-90c4-610fabbb3084",
+                "resourcePath": "sprites\\spr_standing_hurt\\spr_standing_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "102284aa-8e33-4be7-bc0e-618cbc724c5f",
             "Value": {
                 "id": "1e1fa0b7-b16f-4b78-b49e-c336c3bbf68a",
@@ -276,6 +284,14 @@
                 "id": "77246eef-53f0-4a9d-aa7a-8a3011c22efb",
                 "resourcePath": "rooms\\spike_room\\spike_room.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "58fe9d95-1d80-45fe-8dfc-bbea06205c77",
+            "Value": {
+                "id": "1a82f068-4b49-4933-ad71-6f66a96ceb9d",
+                "resourcePath": "sprites\\spr_crouched_hurt\\spr_crouched_hurt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
