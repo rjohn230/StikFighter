@@ -1,5 +1,5 @@
 if (!not_block_bellow )
 {
-	vspeed = -20;
+	vspeed = -10;
 	curr_stance_state=stance_state.jumping;
 }

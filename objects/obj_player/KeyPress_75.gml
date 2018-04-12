@@ -9,30 +9,30 @@ switch curr_stance_state
 	{
 		if(combo[0]==2)
 {
-	sprite_index=spr_base_sliding_head_kick;
+	sprite_index=spr_combo_kick;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
 	
-	if(false)
+	if(head_kick_landed)
 	{
 		with(obj_player_two)
 	{
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
 		hspeed= image_xscale*-3;
-		sprite_index=spr_hurt_air_fall;
+		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
 	}	
 	}
 	
-	alarm[0]=30*.5 // time to chain
+	alarm[0]=30*.75 // time to chain
 	alarm[1]=30*.05; //time resets combos
 }
 	else if(combo[1]==1)
 	{
-		sprite_index=spr_combo_kick;
+		sprite_index=spr_side_kick;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
 		
@@ -43,7 +43,7 @@ switch curr_stance_state
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -2;
 		hspeed= image_xscale*-3;
-		sprite_index=spr_hurt_air_fall;
+		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
@@ -97,15 +97,15 @@ switch curr_stance_state
 		strike_ready=false;
 		
 		
-		if(side_kick_landed)
+		if(leg_sweep_landed)
 	{
 		with(obj_player_two)
 	{
 		curr_stance_state=two_stance_state.hurting_fall
-		vspeed = -1;
-		hspeed= image_xscale*-1;
-		sprite_index=spr_hurt_air_fall;
-		timeline_index=time_if_done_falling_hurt
+		
+		hspeed= image_xscale*-3;
+		sprite_index=spr_air_hurt;
+		timeline_index=time_leg_sweep_hurt
 		timeline_loop=true;
 		timeline_running=true;
 	}	
