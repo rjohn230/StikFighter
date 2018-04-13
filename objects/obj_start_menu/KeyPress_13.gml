@@ -18,7 +18,7 @@ switch choice
 	}
 	case options.training:
 	{
-		room_goto(1);
+		room_goto(fire_room);
 		break;
 	}
 	case options.exit_game:

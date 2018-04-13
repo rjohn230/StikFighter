@@ -102,10 +102,10 @@ switch curr_stance_state
 		with(obj_player_two)
 	{
 		curr_stance_state=two_stance_state.hurting_fall
-		
-		hspeed= image_xscale*-3;
+		vspeed= -5
+		hspeed= image_xscale*-2;
 		sprite_index=spr_air_hurt;
-		timeline_index=time_leg_sweep_hurt
+		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
 	}	

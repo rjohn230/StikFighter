@@ -13,5 +13,5 @@ else if(!player_one_ready|| !player_two_ready && count_down)
 {
 	count_down=false;
 	timeline_running=false;
-	number=10;
+	number=4;
 }

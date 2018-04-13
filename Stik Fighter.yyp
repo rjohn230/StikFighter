@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "a7258d25-67bf-435c-b7e9-7058eeae87ef",
+            "Value": {
+                "id": "feaf613f-9e26-421e-828c-15bdb3d99581",
+                "resourcePath": "timelines\\time_start_round\\time_start_round.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "5016ef51-639e-494d-8cfc-ad48cffc83a7",
@@ -748,6 +756,14 @@
                 "id": "7803f7ce-948d-4ce9-a323-a15a49d77212",
                 "resourcePath": "sprites\\spr_side_kick\\spr_side_kick.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ec8bd96f-3491-4545-a238-18b64512e8b7",
+            "Value": {
+                "id": "6e787921-787c-470e-95b2-df3254788bb2",
+                "resourcePath": "objects\\obj_battle_controller\\obj_battle_controller.yy",
+                "resourceType": "GMObject"
             }
         },
         {
