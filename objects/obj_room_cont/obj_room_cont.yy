@@ -1,10 +1,19 @@
 {
-    "id": "13fc7db1-ab99-4d68-af81-13b24c336217",
+    "id": "7e80e014-ea84-471c-81f2-6c2f14afbf7a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_fire",
+    "name": "obj_room_cont",
     "eventList": [
-        
+        {
+            "id": "4a6bdba1-3c3f-40ac-ae69-f34530f2394b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 18,
+            "eventtype": 9,
+            "m_owner": "7e80e014-ea84-471c-81f2-6c2f14afbf7a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -23,7 +32,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
-    "spriteId": "97f270f3-eb88-48db-a18c-4f08b8969b9b",
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
