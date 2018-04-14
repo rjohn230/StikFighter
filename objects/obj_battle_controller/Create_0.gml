@@ -1,8 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.start_round=false;
-count_down_round=4;
 
+player_one_startX=obj_player.x;
+player_one_startY=obj_player.y;
+
+player_two_startX=obj_player_two.x;
+player_two_startY=obj_player_two.y;
+
+count_down_round=4;
 timeline_index=time_start_round
 timeline_loop=true
 timeline_running=true;

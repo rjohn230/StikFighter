@@ -8,14 +8,10 @@ switch choice
 		choice=options.exit_game
 		break;
 	}
-	case options.single_player:
-	{
-		choice=options.two_player
-		break;
-	}
+	
 	case options.training:
 	{
-		choice=options.single_player
+		choice=options.two_player
 		break;
 	}
 	case options.exit_game:

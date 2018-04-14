@@ -6,7 +6,6 @@ audio_play_sound(sound_menu,1,true);
 enum options
 {
  two_player,
- single_player,
  training,
  exit_game
 }

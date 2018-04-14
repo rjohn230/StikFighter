@@ -463,14 +463,6 @@
             }
         },
         {
-            "Key": "7e80e014-ea84-471c-81f2-6c2f14afbf7a",
-            "Value": {
-                "id": "bdda3d83-6304-4c9f-adc5-8257d33ff59d",
-                "resourcePath": "objects\\obj_room_cont\\obj_room_cont.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7f458170-823f-47eb-a509-5852c5ff3522",
             "Value": {
                 "id": "af4b17b8-0e9c-4e34-84da-458450694625",

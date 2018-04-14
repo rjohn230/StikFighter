@@ -11,11 +11,7 @@ switch choice
 		room_goto(charcater_select_two_room)
 		break;
 	}
-	case options.single_player:
-	{
-		//goto to single player room
-		break;
-	}
+	
 	case options.training:
 	{
 		room_goto(tutorial_room);

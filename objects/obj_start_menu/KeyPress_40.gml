@@ -5,11 +5,6 @@ switch choice
 {
 	case options.two_player:
 	{
-		choice=options.single_player
-		break;
-	}
-	case options.single_player:
-	{
 		choice=options.training
 		break;
 	}
