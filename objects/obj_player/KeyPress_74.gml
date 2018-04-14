@@ -23,7 +23,7 @@ switch curr_stance_state
 	with(obj_player_two)
 	{
 		curr_stance_state=two_stance_state.hurting_high
-		sprite_index=spr_hurt_high;
+		sprite_index=spr_standing_hurt;
 		alarm[5]=30*.5
 	}
 }
@@ -43,7 +43,7 @@ audio_play_sound(sound_punch,2,false);
  	with(obj_player_two)
  	{
 		curr_stance_state=two_stance_state.hurting_high		
- 		sprite_index=spr_hurt_high;
+ 		sprite_index=spr_standing_hurt;
  		alarm[5]=30*.5
  	}
  }
@@ -73,6 +73,7 @@ alarm[1]=30*.5; //time resets combos
 		hspeed= image_xscale*-5;
 		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
+		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
 	}

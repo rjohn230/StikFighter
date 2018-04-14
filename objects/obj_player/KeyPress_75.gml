@@ -19,7 +19,7 @@ switch curr_stance_state
 	{
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
-		hspeed= image_xscale*-3;
+		hspeed= image_xscale*-5;
 		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
@@ -32,7 +32,7 @@ switch curr_stance_state
 }
 	else if(combo[1]==1)
 	{
-		sprite_index=spr_side_kick;
+		sprite_index=spr_kick_side;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
 		
@@ -41,10 +41,11 @@ switch curr_stance_state
 		with(obj_player_two)
 	{
 		curr_stance_state=two_stance_state.hurting_fall
-		vspeed = -2;
-		hspeed= image_xscale*-3;
+		vspeed = -5;
+		hspeed= image_xscale*-7;
 		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
+		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
 	}	
@@ -65,9 +66,9 @@ switch curr_stance_state
 	{
 		with(obj_player_two)
 	{
-		curr_stance_state=two_stance_state.hurting_fall
-		sprite_index=spr_hurt_mid
-		alarm[5]=30*.10;
+		curr_stance_state=two_stance_state.hurting_high
+		sprite_index=spr_standing_hurt
+		alarm[5]=30*.75;
 	}	
 	
 	}
@@ -106,6 +107,7 @@ switch curr_stance_state
 		hspeed= image_xscale*-2;
 		sprite_index=spr_air_hurt;
 		timeline_index=time_if_done_falling_hurt
+		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
 	}	
