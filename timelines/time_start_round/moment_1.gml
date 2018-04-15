@@ -1,1 +1,1 @@
-if(count_down_round==1) timeline_speed=timeline_speed*5
+if(count_down_round==1) timeline_position=30;

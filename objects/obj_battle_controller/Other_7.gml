@@ -126,8 +126,7 @@ switch(current_round)
 	{
 		if(!someone_alive_or_DYING)
 		{
-				// exit-game restart or character slect	
-			//room_goto(menu_room)
+			instance_create_layer(x,y,"Instances",obj_game_menu)
 		}
 		break;	
 	}
