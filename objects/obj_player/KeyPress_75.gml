@@ -17,6 +17,7 @@ switch curr_stance_state
 	{
 		with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
 		hspeed= image_xscale*-5;
@@ -32,6 +33,7 @@ switch curr_stance_state
 }
 	else if(combo[1]==1)
 	{
+		
 		sprite_index=spr_kick_side;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
@@ -40,6 +42,7 @@ switch curr_stance_state
 	{
 		with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -5;
 		hspeed= image_xscale*-7;
@@ -66,6 +69,7 @@ switch curr_stance_state
 	{
 		with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_high
 		sprite_index=spr_standing_hurt
 		alarm[5]=30*.75;
@@ -84,7 +88,7 @@ switch curr_stance_state
 	
 	case stance_state.jumping:
 	{
-		
+		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		sprite_index=spr_air_kick;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain
@@ -102,6 +106,7 @@ switch curr_stance_state
 	{
 		with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed= -5
 		hspeed= image_xscale*-2;

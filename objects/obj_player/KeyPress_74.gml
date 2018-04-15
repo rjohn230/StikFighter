@@ -22,6 +22,7 @@ switch curr_stance_state
 {
 	with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_high
 		sprite_index=spr_standing_hurt;
 		alarm[5]=30*.5
@@ -42,6 +43,7 @@ audio_play_sound(sound_punch,2,false);
  {
  	with(obj_player_two)
  	{
+		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_high		
  		sprite_index=spr_standing_hurt;
  		alarm[5]=30*.5
@@ -68,6 +70,7 @@ alarm[1]=30*.5; //time resets combos
 {
 	with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
 		hspeed= image_xscale*-5;
@@ -95,6 +98,7 @@ alarm[1]=30*.5; //time resets combos
 {
 	with(obj_player_two)
 	{
+		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
 		hspeed= image_xscale*-5;

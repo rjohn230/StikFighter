@@ -16,5 +16,5 @@ enum two_stance_state
 curr_stance_state= stance_state.standing;
 strike_ready=true;
 
-
+I_am_player=2;
 
