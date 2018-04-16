@@ -1,5 +1,5 @@
 done_with_flip=false
-if(keyboard_check(vk_left))
+if(keyboard_check(vk_left) || left_flip || keyboard_check(ord("A")))
 {
 		if(image_xscale=1) sprite_index=spr_back_flip;
 		else sprite_index=spr_forward_flip;

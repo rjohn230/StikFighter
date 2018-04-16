@@ -1,8 +1,25 @@
 /// @description gravity
 // You can write your code in this editor
 
-// attack collision booleans
+// contorller logic
+ left_stick_up= gamepad_axis_value(0,gp_axislv)<=-.99 && !keyboard_check(vk_up);
+ left_stick_down=gamepad_axis_value(0,gp_axislv)>=.99 && !keyboard_check(vk_down);
+ left_stick_left=gamepad_axis_value(0,gp_axislh)<=-.99 && !keyboard_check(vk_left);
+ left_stick_right=gamepad_axis_value(0,gp_axislh)>=.99 && !keyboard_check(vk_right);
+ 
+ x_button=gamepad_button_check_pressed(0,gp_face3) && !keyboard_check(ord("J"));
+ y_button=gamepad_button_check_pressed(0,gp_face4) && !keyboard_check(ord("K"));
+ 
 
+ 
+ special_move_pressed=false;
+
+left_flip=gamepad_axis_value(0,gp_axislh)<=-.50 && gamepad_axis_value(0,gp_axislv)<=-.50
+right_flip=gamepad_axis_value(0,gp_axislh)>=.50 && gamepad_axis_value(0,gp_axislv)<=-.50
+
+stick_uppercut= gamepad_axis_value(0,gp_axislv)>=.99 && gamepad_button_check_pressed(0,gp_face3)
+
+// attack collision booleans
 
 left_punch_landed=(image_xscale==1 && true && collision_circle(x+21,y+4,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y+4,5,obj_player_two,true,true));
 right_punch_landed=(image_xscale==1 && true && collision_circle(x+30,y+2,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-30,y+2,5,obj_player_two,true,true));
@@ -58,12 +75,12 @@ switch curr_stance_state
 		{
 			curr_stance_state=stance_state.jumping;
 		
-		if(keyboard_check(vk_left) && !flipped)
+		if (  (keyboard_check(vk_left) ||left_flip ) && !flipped)
 		{
 			inairflip();
 			flipped=true;
 		}
-		else if(keyboard_check(vk_right) && !flipped)
+		else if( (keyboard_check(vk_right) || right_flip ) && !flipped)
 			{
 				inairflip();
 				flipped=true;
@@ -93,20 +110,60 @@ switch curr_stance_state
 	
 }
 
-// contorller logic
- left_stick_up= gamepad_axis_value(0,gp_axislv)<=-1 && !keyboard_check(vk_up);
- left_stick_down=gamepad_axis_value(0,gp_axislv)>=1 && !keyboard_check(vk_down);
- left_stick_left=gamepad_axis_value(0,gp_axislh)<=-1 && !keyboard_check(vk_left);
- left_stick_right=gamepad_axis_value(0,gp_axislh)>=1 && !keyboard_check(vk_right);
- 
- x_button=gamepad_button_check_pressed(0,gp_face3) && !keyboard_check(ord("J"));
- y_button=gamepad_button_check_pressed(0,gp_face4) && !keyboard_check(ord("K"));
- 
- special_move_pressed=false;
- 
- 
+
  
 
+ if(left_stick_up)
+ {
+	 event_perform(ev_keyboard,vk_up)
+ }
+ 
+ 
+  if(left_stick_down)
+ {
+	 event_perform(ev_keyboard,vk_down)
+ }
+ 
+  if(left_stick_left)
+ {
+	 event_perform(ev_keyboard,vk_left)
+ }
+ 
+  if(left_stick_right)
+ {
+	event_perform(ev_keyboard,vk_right) 
+ }
+  if(x_button)
+ {
+	 event_perform(ev_keypress,ord("J"))
+ }
+  if(y_button)
+ {
+	  event_perform(ev_keypress,ord("K"))
+ }
+  if(special_move_pressed)
+ {
+	// add special	 
+ }
+
+if(left_flip)
+ {
+	 event_perform(ev_keyboard,vk_up)
+	 event_perform(ev_keyboard,vk_left)
+ }
+ if(right_flip)
+ {
+	 event_perform(ev_keyboard,vk_up)
+	 event_perform(ev_keyboard,vk_right)
+ }
+ 
+  if(stick_uppercut)
+ {
+	 event_perform(ev_keyboard,vk_down)
+	 event_perform(ev_keyboard,ord("J"))
+ }
+ 
+ 
 
 
 

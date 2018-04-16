@@ -1,4 +1,4 @@
-if(place_empty(x-5,y)||instance_place(x-5,y,obj_player_two))
+if(place_empty(x-5,y)||false)
 {
 x=x-5;	
 }
