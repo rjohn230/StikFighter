@@ -431,11 +431,27 @@
             }
         },
         {
+            "Key": "7782d646-9ae0-4937-940a-5af5cb3be38c",
+            "Value": {
+                "id": "fba5a55f-f420-4e6b-84d4-b178768e1e0b",
+                "resourcePath": "objects\\obj_spike2\\obj_spike2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "79c0d5fd-3c81-45b0-b0c2-1f77be69e065",
             "Value": {
                 "id": "852b4fe3-0353-4d45-b287-62debc3ded77",
                 "resourcePath": "fonts\\font_game_hud\\font_game_hud.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "7b17024a-b2f1-4650-a7cd-aad414984ce2",
+            "Value": {
+                "id": "2cd6f797-5e6f-4d3f-9c2f-4ccb028f41ab",
+                "resourcePath": "sounds\\room_fight\\room_fight.yy",
+                "resourceType": "GMSound"
             }
         },
         {

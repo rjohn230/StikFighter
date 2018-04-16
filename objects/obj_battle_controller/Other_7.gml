@@ -18,12 +18,13 @@ if(instance_exists(obj_stick_fire))
 if(player_one_hp<=0) {
 	instance_destroy(obj_player);
 	instance_destroy(obj_stick_fire);
-
+    audio_pause_sound(room_fight);
 }
 if(player_two_hp<=0)
 {
 	instance_destroy(obj_player_two);
 	instance_destroy(obj_stick_fire);
+	audio_pause_sound(room_fight);
 	
 }
 

@@ -80,4 +80,4 @@ if(player_two_ready)draw_text_color(room_width*.65,lineY/2,"READY",c_white,c_whi
 
 
 //draw count down
-if(count_down)draw_text(room_width/2-15,lineY/1.4,string(number))
+if(count_down)draw_text(room_width/2,lineY/1.4,string(number))
