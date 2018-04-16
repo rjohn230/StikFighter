@@ -93,5 +93,26 @@ switch curr_stance_state
 	
 }
 
+// contorller logic
+ left_stick_up= gamepad_axis_value(0,gp_axislv)<=-1 && !keyboard_check(vk_up);
+ left_stick_down=gamepad_axis_value(0,gp_axislv)>=1 && !keyboard_check(vk_down);
+ left_stick_left=gamepad_axis_value(0,gp_axislh)<=-1 && !keyboard_check(vk_left);
+ left_stick_right=gamepad_axis_value(0,gp_axislh)>=1 && !keyboard_check(vk_right);
+ 
+ x_button=gamepad_button_check_pressed(0,gp_face3) && !keyboard_check(ord("J"));
+ y_button=gamepad_button_check_pressed(0,gp_face4) && !keyboard_check(ord("K"));
+ 
+ special_move_pressed=false;
+ 
+ 
+ 
+
+
+
+
+
+
+
+
 
 
