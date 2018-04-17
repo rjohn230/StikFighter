@@ -18,4 +18,6 @@ strike_ready=true;
 
 I_am_player=1;
 
+mv=5;
+
 

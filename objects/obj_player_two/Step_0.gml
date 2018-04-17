@@ -74,12 +74,12 @@ switch curr_stance_state
 		
 		if( (keyboard_check(ord("A")) || left_flip) && !flipped)
 		{
-			inairflip();
+			inairflip_two();
 			flipped=true;
 		}
 		else if( (keyboard_check(ord("D")) ||right_flip)  && !flipped)
 			{
-				inairflip();
+				inairflip_two();
 				flipped=true;
 			}
 		}

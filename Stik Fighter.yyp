@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "2e7e48e7-d4d2-44b6-8df1-839459716140",
+            "Value": {
+                "id": "f3864327-e215-4bc9-8179-17e49a1b0138",
+                "resourcePath": "scripts\\moveleft_two\\moveleft_two.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35a71dd0-fd6a-4eef-8449-0db5b55c6c03",
             "Value": {
                 "id": "3d7a44b9-1d7f-485a-b29b-718e0971ba4b",
@@ -324,6 +332,14 @@
                 "id": "1a82f068-4b49-4933-ad71-6f66a96ceb9d",
                 "resourcePath": "sprites\\spr_crouched_hurt\\spr_crouched_hurt.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5bdbc3a8-cb94-43f1-b553-ab61e9705452",
+            "Value": {
+                "id": "aa4273c7-e6e9-48ca-a0a6-c29c780b5f6a",
+                "resourcePath": "scripts\\inairflip_two\\inairflip_two.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -607,6 +623,14 @@
             }
         },
         {
+            "Key": "bc92cbe8-8ccd-4e13-87d1-7adde67d13a4",
+            "Value": {
+                "id": "c0158160-4d19-47fb-8764-27a2493cd81f",
+                "resourcePath": "scripts\\moveright_two\\moveright_two.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c3aaeff4-8c86-4363-a98d-fa2b326a9abc",
             "Value": {
                 "id": "5d4efc8b-d10d-4d2e-a9b7-0f30673e5288",
@@ -729,9 +753,12 @@
     ],
     "script_order": [
         "6d57515e-4bce-404f-ace6-f9529fa844e0",
+        "2e7e48e7-d4d2-44b6-8df1-839459716140",
         "130560e2-9846-452f-ad94-85a1d3f2d331",
+        "bc92cbe8-8ccd-4e13-87d1-7adde67d13a4",
         "0a742641-4665-4858-916e-0f7e6ba652d3",
         "777c7138-505d-4916-aec9-aefefb199869",
+        "5bdbc3a8-cb94-43f1-b553-ab61e9705452",
         "d4ce8808-81a0-4c10-8325-272407535062"
     ],
     "tutorial": ""

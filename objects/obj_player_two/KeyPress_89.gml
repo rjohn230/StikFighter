@@ -88,7 +88,7 @@ switch curr_stance_state
 	
 	case two_stance_state.jumping:
 	{
-		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
+		//hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		sprite_index=spr_air_kick;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain

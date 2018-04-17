@@ -7,12 +7,12 @@ switch curr_stance_state
 {
 	case two_stance_state.standing:
 	{
-		moveleft();
+		moveleft_two();
 		break;
 	}
 	case two_stance_state.kneeling:
 	{
-		moveleft();
+	
 		break;
 	}
 }

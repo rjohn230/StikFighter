@@ -5,7 +5,7 @@
 
 if(instance_exists(obj_stick_fire))
 {
-	if(instance_exists(obj_player))	player_two_hp-=.001
+	if(instance_exists(obj_player))	player_two_hp-=10
 	else player_one_hp-=10;
 }
 
@@ -76,6 +76,7 @@ switch(current_round)
 	{
 		if(!someone_alive_or_DYING)
 		{
+			curr_stance_state=round_number.round_three
 			if(instance_exists(obj_player)) player_one_round_win=player_one_round_win+1
 				else player_two_round_win=player_two_round_win+1
 			
@@ -85,13 +86,13 @@ switch(current_round)
 		
 		if(match_over)
 		{
-			current_round=round_number.round_three
+			break;
 			
 		}
 			
 		else
 		{
-			
+		
 		count_down_round=3;
 		global.start_round=false;
 		
