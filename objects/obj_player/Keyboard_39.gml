@@ -14,7 +14,7 @@ switch curr_stance_state
 	}
 	case stance_state.kneeling:
 	{
-		
+		moveright();
 		break;
 	}
 }

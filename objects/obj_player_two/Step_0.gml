@@ -1,6 +1,16 @@
 /// @description gravity
 // You can write your code in this editor
 
+
+on_fire= collision_circle(x,y,64,obj_fire,false,false);
+
+if(on_fire)
+{
+	instance_destroy();
+	instance_create_layer(x,y,"Instances",obj_stick_fire);	
+}
+
+
 // contorller logic
  left_stick_up= gamepad_axis_value(1,gp_axislv)<=-.99 && !keyboard_check(ord("W"));
  left_stick_down=gamepad_axis_value(1,gp_axislv)>=.99 && !keyboard_check(ord("S"));

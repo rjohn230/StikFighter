@@ -76,7 +76,7 @@ switch(current_round)
 	{
 		if(!someone_alive_or_DYING)
 		{
-			curr_stance_state=round_number.round_three
+			current_round=round_number.round_three
 			if(instance_exists(obj_player)) player_one_round_win=player_one_round_win+1
 				else player_two_round_win=player_two_round_win+1
 			

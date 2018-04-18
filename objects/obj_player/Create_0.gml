@@ -20,4 +20,6 @@ I_am_player=1;
 
 mv=5;
 
+I_am_alive=instance_exists(obj_player)
+
 
