@@ -45,22 +45,20 @@ switch(current_round)
 		count_down_round=3;
 		global.start_round=false;
 		
+		if(instance_exists(obj_player)) instance_destroy(obj_player);
+		else instance_destroy(obj_player_two)
 		
-		if(instance_exists(obj_player))
-		{
 				instance_create_layer(player_two_startX,player_two_startY,"Instances",obj_player_two)
 				player_one_hp=100;
 				player_two_hp=100;
 				
 				
-		}
-		else
-		{
+		
 			instance_create_layer(player_one_startX,player_one_startY,"Instances",obj_player)
 				player_one_hp=100;
 				player_two_hp=100;
 			
-		}
+		
 		
 		timeline_index=time_start_round
 		timeline_loop=true
@@ -94,21 +92,19 @@ switch(current_round)
 		count_down_round=3;
 		global.start_round=false;
 		
+				if(instance_exists(obj_player)) instance_destroy(obj_player);
+		else instance_destroy(obj_player_two)
 		
-		if(instance_exists(obj_player))
-		{
 				instance_create_layer(player_two_startX,player_two_startY,"Instances",obj_player_two)
 				player_one_hp=100;
 				player_two_hp=100;
-			
-		}
-		else
-		{
+				
+				
+		
 			instance_create_layer(player_one_startX,player_one_startY,"Instances",obj_player)
 				player_one_hp=100;
 				player_two_hp=100;
 			
-		}
 		
 		timeline_index=time_start_round
 		timeline_loop=true
