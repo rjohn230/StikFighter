@@ -61,7 +61,8 @@ switch curr_stance_state
 	
 	case two_stance_state.jumping:
 	{
-		if(not_block_bellow)
+					free_fall= vspeed<=0;
+		if(free_fall)
 		{
 			curr_stance_state=two_stance_state.jumping;
 		
