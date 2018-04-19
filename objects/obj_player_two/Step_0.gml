@@ -1,11 +1,11 @@
 /// @description gravity
 // You can write your code in this editor
 
-
+in_air_collide= collision_circle(x,y,32,obj_player,false,true);
 
 
 // contorller logic
- left_stick_up= gamepad_axis_value(1,gp_axislv)<=-.99 && !keyboard_check(ord("W"));
+ left_stick_up= gamepad_axis_value(1,gp_axislv)<=-.99 && !keyboard_check_pressed(ord("W"));
  left_stick_down=gamepad_axis_value(1,gp_axislv)>=.99 && !keyboard_check(ord("S"));
  left_stick_left=gamepad_axis_value(1,gp_axislh)<=-.99 && !keyboard_check(ord("A"));
  left_stick_right=gamepad_axis_value(1,gp_axislh)>=.99 && !keyboard_check(ord("D"));
@@ -64,6 +64,11 @@ switch curr_stance_state
 					free_fall= vspeed<=0;
 		if(free_fall)
 		{
+						if(in_air_collide)
+			{
+				if(image_xscale==-1)x=x+5;
+				else x=x-5
+				}
 			curr_stance_state=two_stance_state.jumping;
 		
 		if( (keyboard_check(ord("A")) || left_flip) && !flipped)
@@ -106,7 +111,7 @@ switch curr_stance_state
  
  if(left_stick_up)
  {
-	 event_perform(ev_keyboard,ord("W"))
+	 event_perform(ev_keypress,ord("W"))
  }
  
  
@@ -139,12 +144,12 @@ switch curr_stance_state
  
 if(left_flip)
  {
-	 event_perform(ev_keyboard,ord("W"))
+	 event_perform(ev_keypress,ord("W"))
 	 event_perform(ev_keyboard,ord("A"))
  }
  if(right_flip)
  {
-	 event_perform(ev_keyboard,ord("W"))
+	 event_perform(ev_keypress,ord("W"))
 	 event_perform(ev_keyboard,ord("D"))
  }
 

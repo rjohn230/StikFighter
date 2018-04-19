@@ -8,7 +8,7 @@
 
 
 // contorller logic
- left_stick_up= gamepad_axis_value(0,gp_axislv)<=-.99 && !keyboard_check(vk_up);
+ left_stick_up= gamepad_axis_value(0,gp_axislv)<=-.99 && !keyboard_check_pressed(vk_up);
  left_stick_down=gamepad_axis_value(0,gp_axislv)>=.99 && !keyboard_check(vk_down);
  left_stick_left=gamepad_axis_value(0,gp_axislh)<=-.99 && !keyboard_check(vk_left);
  left_stick_right=gamepad_axis_value(0,gp_axislh)>=.99 && !keyboard_check(vk_right);
@@ -29,11 +29,11 @@ stick_uppercut= gamepad_axis_value(0,gp_axislv)>=.99 && gamepad_button_check_pre
 
 // attack collision booleans
 
-
+in_air_collide= collision_circle(x,y,32,obj_player_two,false,true);
 
 
 //gravity code
-not_block_bellow = place_empty(x,y+1);
+not_block_bellow =place_empty(x,y+1);
 
 
 if(!not_block_bellow)
@@ -72,6 +72,11 @@ switch curr_stance_state
 			free_fall= vspeed<=0;
 		if(free_fall)
 		{
+			if(in_air_collide)
+			{
+				if(image_xscale==-1)x=x+5;
+				else x=x-5
+				}
 			curr_stance_state=stance_state.jumping;
 		
 		if (  (keyboard_check(vk_left) ||left_flip ) && !flipped)
@@ -117,7 +122,7 @@ switch curr_stance_state
 
  if(left_stick_up)
  {
-	 event_perform(ev_keyboard,vk_up)
+	 event_perform(ev_keypress,vk_up)
  }
  
  
@@ -150,12 +155,12 @@ switch curr_stance_state
 
 if(left_flip)
  {
-	 event_perform(ev_keyboard,vk_up)
+	 event_perform(ev_keypress,vk_up)
 	 event_perform(ev_keyboard,vk_left)
  }
  if(right_flip)
  {
-	 event_perform(ev_keyboard,vk_up)
+	 event_perform(ev_keypress,vk_up)
 	 event_perform(ev_keyboard,vk_right)
  }
  
