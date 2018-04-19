@@ -81,7 +81,7 @@ switch curr_stance_state
 		{
 			curr_stance_state=two_stance_state.standing;
 			flipped=false;
-			hspeed=0;
+			
 			
 		}
 		
