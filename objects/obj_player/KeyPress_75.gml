@@ -1,6 +1,7 @@
 /// @description kick
 // You can write your code in this editor
-
+if(global.start_round)
+{
 
 front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-22,y-11,5,obj_player_two,true,true));
 leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player_two,true,true));
@@ -99,7 +100,7 @@ switch curr_stance_state
 	
 	case stance_state.jumping:
 	{
-		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
+		
 		sprite_index=spr_air_kick;
 		strike_ready=false;
 		alarm[0]=30*1 // time to chain
@@ -139,6 +140,7 @@ switch curr_stance_state
 	
 }
 
+}
 
 
 

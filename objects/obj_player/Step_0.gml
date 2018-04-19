@@ -16,6 +16,8 @@
  x_button=gamepad_button_check_pressed(0,gp_face3) && !keyboard_check(ord("J"));
  y_button=gamepad_button_check_pressed(0,gp_face4) && !keyboard_check(ord("K"));
  
+  start_button=gamepad_button_check_pressed(0,gp_start) && !keyboard_check_pressed(vk_alt);
+ 
 
  
  special_move_pressed=false;
@@ -161,6 +163,12 @@ if(left_flip)
  {
 	 event_perform(ev_keyboard,vk_down)
 	 event_perform(ev_keyboard,ord("J"))
+ }
+ 
+   if(start_button)
+ {
+	 event_perform(ev_keypress,vk_alt)
+	
  }
  
  

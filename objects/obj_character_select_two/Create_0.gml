@@ -17,3 +17,5 @@ player_one_ready=false;
 player_two_ready=false;
 
 count_down=false
+
+free=true;

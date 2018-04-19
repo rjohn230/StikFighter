@@ -10,3 +10,5 @@ enum options
  exit_game
 }
 choice= options.training
+
+free =true;

@@ -7,3 +7,5 @@ enum game_menu_options
  character_select
 }
 choice= game_menu_options.character_select
+global.start_round=false;
+free=true;
