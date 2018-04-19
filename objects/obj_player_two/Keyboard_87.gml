@@ -1,3 +1,4 @@
+not_block_bellow = place_empty(x,y+1);
 switch curr_stance_state
 {
 	case two_stance_state.standing:

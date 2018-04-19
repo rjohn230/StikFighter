@@ -9,8 +9,6 @@ if(instance_exists(obj_stick_fire))
 	else player_one_hp-=10;
 }
 
-
-
 //kill player
 
 

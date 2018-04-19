@@ -1,6 +1,11 @@
 /// @description kick
 // You can write your code in this editor
 
+front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-22,y-11,5,obj_player_two,true,true));
+leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player_two,true,true));
+head_kick_landed=(image_xscale==1 && true && collision_circle(x+21,y-7,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y-7,5,obj_player_two,true,true));
+side_kick_landed=(image_xscale==1 && true && collision_circle(x+17,y+3,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-17,y+3,5,obj_player_two,true,true));
+air_kick_landed=false;
 
 switch curr_stance_state
 

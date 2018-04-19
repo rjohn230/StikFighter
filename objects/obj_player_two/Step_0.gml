@@ -2,13 +2,6 @@
 // You can write your code in this editor
 
 
-on_fire= collision_circle(x,y,64,obj_fire,false,false);
-
-if(on_fire)
-{
-	instance_destroy();
-	instance_create_layer(x,y,"Instances",obj_stick_fire);	
-}
 
 
 // contorller logic
@@ -28,17 +21,7 @@ right_flip=gamepad_axis_value(1,gp_axislh)>=.50 && gamepad_axis_value(1,gp_axisl
 
 // attack collision booleans
 
-left_punch_landed=(image_xscale==1 && true && collision_circle(x+21,y+4,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y+4,5,obj_player,true,true));
-right_punch_landed=(image_xscale==1 && true && collision_circle(x+30,y+2,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-30,y+2,5,obj_player,true,true));
-uppercut_landed=(image_xscale==1 && true && collision_circle(x+16,y+1,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y+1,5,obj_player,true,true));
-front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-22,y-11,5,obj_player,true,true));
-leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player,true,true));
-head_kick_landed=(image_xscale==1 && true && collision_circle(x+21,y-7,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y-7,5,obj_player,true,true));
-side_kick_landed=(image_xscale==1 && true && collision_circle(x+17,y+3,5,obj_player,false,true)) || (image_xscale==-1 && true && collision_circle(x-17,y+3,5,obj_player,true,true));
 
-
-air_kick_landed=false;
-jumping_punch_landed=false;
 
 
 //gravity code

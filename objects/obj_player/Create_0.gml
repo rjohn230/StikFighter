@@ -10,7 +10,8 @@ enum stance_state
 	kneeling,
 	blocking,
 	hurting_high,
-	hurting_fall
+	hurting_fall,
+	falling
 }
 curr_stance_state= stance_state.standing;
 strike_ready=true;

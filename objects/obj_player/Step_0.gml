@@ -2,14 +2,7 @@
 // You can write your code in this editor
 
 
-on_fire= collision_circle(x,y,64,obj_fire,false,false);
 
-if(on_fire)
-{
-	instance_deactivate_object(obj_player)
-	instance_destroy();
-	instance_create_layer(x,y,"Instances",obj_stick_fire);	
-}
 
 
 
@@ -34,17 +27,7 @@ stick_uppercut= gamepad_axis_value(0,gp_axislv)>=.99 && gamepad_button_check_pre
 
 // attack collision booleans
 
-left_punch_landed=(image_xscale==1 && true && collision_circle(x+21,y+4,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y+4,5,obj_player_two,true,true));
-right_punch_landed=(image_xscale==1 && true && collision_circle(x+30,y+2,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-30,y+2,5,obj_player_two,true,true));
-uppercut_landed=(image_xscale==1 && true && collision_circle(x+16,y+1,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y+1,5,obj_player_two,true,true));
-front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-22,y-11,5,obj_player_two,true,true));
-leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player_two,true,true));
-head_kick_landed=(image_xscale==1 && true && collision_circle(x+21,y-7,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y-7,5,obj_player_two,true,true));
-side_kick_landed=(image_xscale==1 && true && collision_circle(x+17,y+3,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-17,y+3,5,obj_player_two,true,true));
 
-
-air_kick_landed=false;
-jumping_punch_landed=false;
 
 
 //gravity code
@@ -118,6 +101,9 @@ switch curr_stance_state
 		}
 	 break;	
 	}
+	
+	
+	
 	
 	
 	
