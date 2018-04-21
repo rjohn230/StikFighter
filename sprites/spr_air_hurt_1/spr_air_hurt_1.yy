@@ -8,7 +8,7 @@
     "VTile": false,
     "bbox_bottom": 58,
     "bbox_left": 10,
-    "bbox_right": 61,
+    "bbox_right": 63,
     "bbox_top": 7,
     "bboxmode": 0,
     "colkind": 1,

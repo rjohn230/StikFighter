@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "20d4e440-c276-45f0-bf8e-9b152561fc4a",
+            "Value": {
+                "id": "d022894d-8a4b-4ae7-971e-7d20ccbfc7a8",
+                "resourcePath": "sprites\\spr_forward_flip_2\\spr_forward_flip_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "220e931a-9e2e-4ba6-894c-e0323dff1e16",
             "Value": {
                 "id": "ab8c6991-8697-4af1-baac-519547b6bee3",
@@ -583,6 +591,14 @@
             }
         },
         {
+            "Key": "7efda809-91aa-4225-a061-e4dd2a0bc259",
+            "Value": {
+                "id": "74fe4177-cf95-4e2e-b946-7787c27b64d7",
+                "resourcePath": "sprites\\spr_back_flip_2\\spr_back_flip_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7f458170-823f-47eb-a509-5852c5ff3522",
             "Value": {
                 "id": "af4b17b8-0e9c-4e34-84da-458450694625",
@@ -700,6 +716,14 @@
                 "id": "a090d0b1-5468-42cc-982f-3f6cf80f5a1b",
                 "resourcePath": "objects\\obj_title\\obj_title.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9e286316-313a-429e-8a28-b5e792eb13e2",
+            "Value": {
+                "id": "0625c680-44c5-4ec0-879f-0509d7c687c2",
+                "resourcePath": "sprites\\spr_air_hurt_2\\spr_air_hurt_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -852,6 +876,14 @@
                 "id": "81d826c3-e2e0-4aaa-967d-0495f6853202",
                 "resourcePath": "timelines\\time_start_game\\time_start_game.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "d0351201-f95e-43e8-86cc-54c2d1efb0ea",
+            "Value": {
+                "id": "94b5e23e-0336-4ad7-8903-1c042709270d",
+                "resourcePath": "sprites\\spr_air_punch_2\\spr_air_punch_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
