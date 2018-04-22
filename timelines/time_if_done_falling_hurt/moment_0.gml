@@ -1,16 +1,17 @@
-hit_ground= hspeed==0 && vspeed==0;
+hit_ground= collision_point(x-19,y+29,obj_ground,false,true);
 
 
-if(sprite_index==spr_air_hurt && image_index>=3)
+if(sprite_index==air_hurt && image_index>=4)
 {
-	image_index=3;
+	sprite_set_speed(air_hurt,0,spritespeed_framespersecond)
 }
 
 
 if(hit_ground && curr_stance_state==two_stance_state.hurting_fall)
 {
 	curr_stance_state=two_stance_state.standing
-	sprite_index=spr_get_up;
+	sprite_index=get_up;
+	sprite_set_speed(air_hurt,6,spritespeed_framespersecond)
 	
 	
 
@@ -18,7 +19,8 @@ if(hit_ground && curr_stance_state==two_stance_state.hurting_fall)
 else if(hit_ground && curr_stance_state==stance_state.hurting_fall)
 {
 	curr_stance_state=stance_state.standing
-	sprite_index=spr_get_up;
+	sprite_index=get_up;
+	sprite_set_speed(air_hurt,6,spritespeed_framespersecond)
 	
 	
 }

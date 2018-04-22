@@ -105,7 +105,7 @@ switch curr_stance_state
 		if(!keyboard_check(vk_down))
 		{
 			curr_stance_state=stance_state.standing;
-			sprite_index=spr_idle;
+			sprite_index=idle;
 		}
 	 break;	
 	}
@@ -175,14 +175,3 @@ if(left_flip)
 	 event_perform(ev_keypress,vk_alt)
 	
  }
- 
- 
-
-
-
-
-
-
-
-
-

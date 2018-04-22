@@ -97,7 +97,7 @@ switch curr_stance_state
 		if(!keyboard_check(ord("S")))
 		{
 			curr_stance_state=two_stance_state.standing;
-			sprite_index=spr_idle;
+			sprite_index=idle;
 		}
 	 break;	
 	}
@@ -152,12 +152,3 @@ if(left_flip)
 	 event_perform(ev_keypress,ord("W"))
 	 event_perform(ev_keyboard,ord("D"))
  }
-
-
-
-
-
-
-
-
-

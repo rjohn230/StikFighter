@@ -12,4 +12,4 @@ if(combo[1]>1)
 	combo[1]=0;	
 }
 
-sprite_index=spr_idle;
+sprite_index=idle;

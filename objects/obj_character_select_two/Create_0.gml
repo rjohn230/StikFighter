@@ -4,14 +4,13 @@ number=4
 
 enum choice_player
 {
+	black_player,
 	red_player,
-	blue_player,
-	green_player,
-	yellow_player
+	purple_player
 }
 
-player_one=choice_player.red_player
-player_two=choice_player.blue_player
+player_one=choice_player.black_player
+player_two=choice_player.purple_player
 
 player_one_ready=false;
 player_two_ready=false;
@@ -19,3 +18,6 @@ player_two_ready=false;
 count_down=false
 
 free=true;
+
+global.player_one_choice= choice_player.black_player;
+global.player_two_choice= choice_player.purple_player;

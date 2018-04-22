@@ -1,8 +1,8 @@
-if(sprite_index==spr_get_up)
+if(sprite_index==get_up)
 {
 	if(image_index>=6)
 	{
-		sprite_index=spr_idle
+		sprite_index=idle
 		timeline_running=false
 		
 	}

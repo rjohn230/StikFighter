@@ -1,6 +1,7 @@
 /// @description Menu
 // You can write your code in this editor
 draw_set_font(font_character_select)
+draw_set_color(c_white)
 //line divide
 lineX=room_width/2
 lineY= room_height
@@ -21,51 +22,43 @@ draw_circle(c2x,c2y,100,true)
 
 switch player_one
 {
+	case choice_player.black_player:
+	{
+		draw_circle_color(lineX/2,lineY/6,50,c_black,c_black,false);
+	break;	
+	}
 	case choice_player.red_player:
 	{
-		draw_circle_color(lineX/2,lineY/6,50,c_black,c_red,false);
+		draw_circle_color(lineX/2,lineY/6,50,c_red,c_red,false);
 	break;	
 	}
-	case choice_player.blue_player:
+	case choice_player.purple_player:
 	{
-		draw_circle_color(lineX/2,lineY/6,50,c_black,c_blue,false);
+		draw_circle_color(lineX/2,lineY/6,50,c_purple,c_purple,false);
 	break;	
 	}
-	case choice_player.green_player:
-	{
-		draw_circle_color(lineX/2,lineY/6,50,c_black,c_green,false);
-	break;	
-	}
-	case choice_player.yellow_player:
-	{
-		draw_circle_color(lineX/2,lineY/6,50,c_black,c_yellow,false);
-	break;	
-	}
+
 	
 }
 
 switch player_two
 {
+	case choice_player.black_player:
+	{
+		draw_circle_color(c2x,c2y,50,c_black,c_black,false);
+	break;	
+	}
 	case choice_player.red_player:
 	{
-		draw_circle_color(c2x,c2y,50,c_black,c_red,false);
+		draw_circle_color(c2x,c2y,50,c_red,c_red,false);
 	break;	
 	}
-	case choice_player.blue_player:
+	case choice_player.purple_player:
 	{
-		draw_circle_color(c2x,c2y,50,c_black,c_blue,false);
+		draw_circle_color(c2x,c2y,50,c_purple,c_purple,false);
 	break;	
 	}
-	case choice_player.green_player:
-	{
-		draw_circle_color(c2x,c2y,50,c_black,c_green,false);
-	break;	
-	}
-	case choice_player.yellow_player:
-	{
-		draw_circle_color(c2x,c2y,50,c_black,c_yellow,false);
-	break;	
-	}
+
 	
 }
 
@@ -81,3 +74,4 @@ if(player_two_ready)draw_text_color(room_width*.65,lineY/2,"READY",c_white,c_whi
 
 //draw count down
 if(count_down)draw_text(room_width/2,lineY/1.4,string(number))
+

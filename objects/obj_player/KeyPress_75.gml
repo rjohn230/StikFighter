@@ -7,7 +7,6 @@ front_kick_landed=(image_xscale==1 && true && collision_circle(x+22,y-11,5,obj_p
 leg_sweep_landed=(image_xscale==1 && true && collision_circle(x+16,y-26,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-16,y-26,5,obj_player_two,true,true));
 head_kick_landed=(image_xscale==1 && true && collision_circle(x+21,y-7,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-21,y-7,5,obj_player_two,true,true));
 side_kick_landed=(image_xscale==1 && true && collision_circle(x+17,y+3,5,obj_player_two,false,true)) || (image_xscale==-1 && true && collision_circle(x-17,y+3,5,obj_player_two,true,true));
-air_kick_landed=false;
 
 
 
@@ -21,7 +20,7 @@ switch curr_stance_state
 	{
 		if(combo[0]==2)
 {
-	sprite_index=spr_combo_kick;
+	sprite_index=head_kick;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
 	
@@ -33,9 +32,10 @@ switch curr_stance_state
 		curr_stance_state=two_stance_state.hurting_fall
 		vspeed = -10;
 		hspeed= image_xscale*-5;
-		sprite_index=spr_air_hurt;
+		sprite_index=air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
+		timeline_position=0;
 		timeline_running=true;
 	}	
 	}
@@ -46,7 +46,7 @@ switch curr_stance_state
 	else if(combo[1]==1)
 	{
 		
-		sprite_index=spr_kick_side;
+		sprite_index=side_kick;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
 		
@@ -56,9 +56,9 @@ switch curr_stance_state
 	{
 		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		curr_stance_state=two_stance_state.hurting_fall
-		vspeed = -5;
-		hspeed= image_xscale*-7;
-		sprite_index=spr_air_hurt;
+		vspeed = -10;
+		hspeed= image_xscale*-4;
+		sprite_index=air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_position=0;
 		timeline_loop=true;
@@ -71,7 +71,7 @@ switch curr_stance_state
 	}
 	else if (combo[1]==0)
 	{
-		sprite_index=spr_kick;
+		sprite_index=front_kick;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
 		
@@ -83,7 +83,7 @@ switch curr_stance_state
 	{
 		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_high
-		sprite_index=spr_standing_hurt
+		sprite_index=standing_hurt
 		alarm[5]=30*.75;
 	}	
 	
@@ -101,16 +101,14 @@ switch curr_stance_state
 	case stance_state.jumping:
 	{
 		
-		sprite_index=spr_air_kick;
-		strike_ready=false;
-		alarm[0]=30*1 // time to chain
+	// no air kick
 		
 		break;
 	} 
 	case stance_state.kneeling:
 	{
 		
-		sprite_index=spr_leg_sweep;
+		sprite_index=leg_sweep;
 		strike_ready=false;
 		
 		
@@ -120,9 +118,9 @@ switch curr_stance_state
 	{
 		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=two_stance_state.hurting_fall
-		vspeed= -5
+		vspeed= -10
 		hspeed= image_xscale*-2;
-		sprite_index=spr_air_hurt;
+		sprite_index=air_hurt;
 		timeline_index=time_if_done_falling_hurt
 		timeline_position=0;
 		timeline_loop=true;
@@ -141,7 +139,4 @@ switch curr_stance_state
 }
 
 }
-
-
-
 

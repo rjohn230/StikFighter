@@ -1,29 +1,23 @@
-/// @description Player two press down
-// You can write your code in this editor
-if(!player_two_ready)
+if(!player_one_ready)
 {
-switch player_two
+switch player_one
 {
+	case choice_player.black_player:
+	{
+		player_one=choice_player.red_player
+	break;	
+	}
 	case choice_player.red_player:
 	{
-		player_two=choice_player.blue_player
+		player_one=choice_player.purple_player
 	break;	
 	}
-	case choice_player.blue_player:
+	case choice_player.purple_player:
 	{
-		player_two=choice_player.green_player
+		player_one=choice_player.black_player
 	break;	
 	}
-	case choice_player.green_player:
-	{
-		player_two=choice_player.yellow_player
-	break;	
-	}
-	case choice_player.yellow_player:
-	{
-		player_two=choice_player.red_player
-	break;	
-	}
+	
 	
 }
 }

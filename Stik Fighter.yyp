@@ -687,14 +687,6 @@
             }
         },
         {
-            "Key": "8fea93a1-f450-4bde-8659-8056d06c24d0",
-            "Value": {
-                "id": "207cb855-8d53-49ab-88a9-12cf77ef06f3",
-                "resourcePath": "timelines\\time_leg_sweep_hurt\\time_leg_sweep_hurt.yy",
-                "resourceType": "GMTimeline"
-            }
-        },
-        {
             "Key": "912b578d-934e-45b9-be0f-60dff9f1729c",
             "Value": {
                 "id": "aa4db396-e651-4465-8d17-5e57b6cc734b",

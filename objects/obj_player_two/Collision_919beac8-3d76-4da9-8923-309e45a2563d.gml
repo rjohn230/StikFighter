@@ -2,4 +2,6 @@
 // You can write your code in this editor
 // audio_play_sound(sound_fire_burn,4,false);
 //speed = 0; 
-instance_change(obj_stick_fire,true) 
+curr_stance_state= two_stance_state.dying
+sprite_index=on_fire;
+obj_battle_controller.player_two_hp-=5;

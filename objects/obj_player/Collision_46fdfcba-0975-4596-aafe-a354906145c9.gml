@@ -1,3 +1,4 @@
-/// @description Insert description here
-// You can write your code in this edito
-instance_change(obj_stick_fire,true)
+curr_stance_state= stance_state.dying
+sprite_index=on_fire;
+obj_battle_controller.player_one_hp-=5;
+
