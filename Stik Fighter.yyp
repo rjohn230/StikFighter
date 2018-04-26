@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "c962706e-81a3-4d62-9c1f-3a5bf2a33951",
+            "Value": {
+                "id": "4d803a39-b577-42b9-b160-79e75797baa7",
+                "resourcePath": "sprites\\spr_paper_airplane\\spr_paper_airplane.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "caea776d-d1a3-4086-91f9-78419e3d3705",
             "Value": {
                 "id": "769c7550-309a-4bde-bc9f-058769d22ede",
