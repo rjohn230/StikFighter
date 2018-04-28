@@ -20,7 +20,7 @@
  
 
  
- special_move_pressed=false;
+ special_move_pressed=gamepad_button_check_pressed(0,gp_face1)&& gamepad_button_check_pressed(0,gp_face2);
 
 left_flip=gamepad_axis_value(0,gp_axislh)<=-.50 && gamepad_axis_value(0,gp_axislv)<=-.50
 right_flip=gamepad_axis_value(0,gp_axislh)>=.50 && gamepad_axis_value(0,gp_axislv)<=-.50
@@ -177,5 +177,11 @@ if(left_flip)
    if(start_button)
  {
 	 event_perform(ev_keypress,vk_alt)
+	
+ }
+ 
+    if(special_move_pressed)
+ {
+	 event_perform(ev_keypress,ord("P"));
 	
  }

@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "6d89f2f6-830f-461b-88d8-cfaec5df096f",
+            "Value": {
+                "id": "482e5d2f-af7b-4a5d-9118-7a506b187200",
+                "resourcePath": "objects\\obj_laser\\obj_laser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6ed719ef-9ea5-4526-9650-d1c84065dd27",
             "Value": {
                 "id": "84dbb1b5-1c8f-41d5-9476-d9ea047b2793",
@@ -588,6 +596,14 @@
                 "id": "852b4fe3-0353-4d45-b287-62debc3ded77",
                 "resourcePath": "fonts\\font_game_hud\\font_game_hud.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "7a033659-3fd7-472c-8d8a-8486a94b13c8",
+            "Value": {
+                "id": "ff7691e2-220f-4668-b968-e3c06d2a4880",
+                "resourcePath": "timelines\\time_done_special_two\\time_done_special_two.yy",
+                "resourceType": "GMTimeline"
             }
         },
         {
@@ -708,6 +724,14 @@
                 "id": "b66a73bc-47ab-40e9-a695-8ecf5df3b6bc",
                 "resourcePath": "sprites\\spr_kick_2\\spr_kick_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9604433f-38d7-4542-a928-0ca3e7118396",
+            "Value": {
+                "id": "c585ad12-3ddc-468b-bfef-4f36f6d77506",
+                "resourcePath": "timelines\\time_done_special\\time_done_special.yy",
+                "resourceType": "GMTimeline"
             }
         },
         {

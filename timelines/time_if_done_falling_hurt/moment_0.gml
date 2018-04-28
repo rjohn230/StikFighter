@@ -1,4 +1,4 @@
-hit_ground= collision_point(x,y+32,obj_ground,false,true);
+hit_ground= collision_rectangle(x-28,y+28,x+28,y+33,obj_ground,false,true);
 
 
 if(sprite_index==air_hurt && image_index>=4)

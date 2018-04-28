@@ -13,7 +13,7 @@ in_air_collide= collision_circle(x,y,32,obj_player,false,true);
  x_button=gamepad_button_check_pressed(1,gp_face3) && !keyboard_check(ord("T"));
  y_button=gamepad_button_check_pressed(1,gp_face4) && !keyboard_check(ord("Y"));
  
- special_move_pressed=false;
+ special_move_pressed=gamepad_button_check_pressed(1,gp_face1)&& gamepad_button_check_pressed(1,gp_face2);
 
 left_flip=gamepad_axis_value(1,gp_axislh)<=-.50 && gamepad_axis_value(1,gp_axislv)<=-.50
 right_flip=gamepad_axis_value(1,gp_axislh)>=.50 && gamepad_axis_value(1,gp_axislv)<=-.50
@@ -155,4 +155,10 @@ if(left_flip)
  {
 	 event_perform(ev_keypress,ord("W"))
 	 event_perform(ev_keyboard,ord("D"))
+ }
+ 
+     if(special_move_pressed)
+ {
+	 event_perform(ev_keypress,ord("R"));
+	
  }

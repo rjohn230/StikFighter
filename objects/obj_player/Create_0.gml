@@ -44,6 +44,8 @@ if(!variable_global_exists("player_one_choice"))
 		air_hurt=spr_air_hurt;
 		back_flip=spr_back_flip;
 		front_flip=spr_forward_flip;
+		special_move=spr_special;
+		laser=spr_laser;
 }
 else
 {
@@ -69,6 +71,8 @@ switch global.player_one_choice
 		air_hurt=spr_air_hurt;
 		back_flip=spr_back_flip;
 		front_flip=spr_forward_flip;
+		special_move=spr_special;
+		laser=spr_laser;
 		
 		break;
 	}
@@ -91,6 +95,8 @@ switch global.player_one_choice
 		air_hurt=spr_air_hurt_2;
 		back_flip=spr_back_flip_2;
 		front_flip=spr_forward_flip_2;
+		special_move=spr_special_2;
+		laser=spr_laser_2;
 		break;
 	}
 	
@@ -112,6 +118,8 @@ switch global.player_one_choice
 		air_hurt=spr_air_hurt_1;
 		back_flip=spr_back_flip_1;
 		front_flip=spr_forward_flip_1;
+		special_move=spr_special_1;
+		laser=spr_laser_1;
 		break;
 	}
 	
