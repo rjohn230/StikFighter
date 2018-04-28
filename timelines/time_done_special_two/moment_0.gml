@@ -1,7 +1,4 @@
-special_ready=global.start_round && strike_ready && obj_battle_controller.player_two_energy>=100;
-if(special_ready)
-{
-	
+
 	
 	if(image_xscale==1) 
 	{
@@ -34,6 +31,3 @@ if(special_ready)
 	}
 	
 	
-	
-}
-else timeline_running=false;
