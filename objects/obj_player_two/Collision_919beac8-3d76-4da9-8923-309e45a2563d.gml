@@ -4,4 +4,4 @@
 //speed = 0; 
 curr_stance_state= two_stance_state.dying
 sprite_index=on_fire;
-obj_battle_controller.player_two_hp-=5;
+

@@ -102,7 +102,11 @@ switch curr_stance_state
 	 break;	
 	}
 	
-	
+		case two_stance_state.dying:
+	{
+		obj_battle_controller.player_two_hp-=5;
+		break;
+	}
 	
 }
 
