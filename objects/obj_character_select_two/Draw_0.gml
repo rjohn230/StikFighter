@@ -24,17 +24,18 @@ switch player_one
 {
 	case choice_player.black_player:
 	{
-		draw_circle_color(lineX/2,lineY/6,50,c_black,c_black,false);
+		draw_sprite(spr_portrait,0,lineX/2,lineY/6);
 	break;	
 	}
 	case choice_player.red_player:
 	{
-		draw_circle_color(lineX/2,lineY/6,50,c_red,c_red,false);
+		draw_sprite(spr_portrait_2,0,lineX/2,lineY/6);
+		
 	break;	
 	}
 	case choice_player.purple_player:
 	{
-		draw_circle_color(lineX/2,lineY/6,50,c_purple,c_purple,false);
+		draw_sprite(spr_portrait_1,0,lineX/2,lineY/6);
 	break;	
 	}
 
@@ -45,17 +46,17 @@ switch player_two
 {
 	case choice_player.black_player:
 	{
-		draw_circle_color(c2x,c2y,50,c_black,c_black,false);
+		draw_sprite(spr_portrait,0,c2x,c2y);
 	break;	
 	}
 	case choice_player.red_player:
 	{
-		draw_circle_color(c2x,c2y,50,c_red,c_red,false);
+		draw_sprite(spr_portrait_2,0,c2x,c2y);
 	break;	
 	}
 	case choice_player.purple_player:
 	{
-		draw_circle_color(c2x,c2y,50,c_purple,c_purple,false);
+		draw_sprite(spr_portrait_1,0,c2x,c2y);
 	break;	
 	}
 
