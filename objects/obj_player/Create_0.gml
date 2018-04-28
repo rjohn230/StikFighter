@@ -19,14 +19,34 @@ strike_ready=true;
 
 I_am_player=1;
 
-mv=8;
+mv=6.5;
 
 I_am_alive=instance_exists(obj_player)
 
 
 // displays correct sprites
 
-
+if(!variable_global_exists("player_one_choice"))
+{
+		left_punch=spr_punch;
+		right_punch=spr_punch_right;
+		front_kick = spr_kick;
+		side_kick= spr_kick_side;
+		idle=spr_idle;
+		on_fire=spr_on_fire;
+		standing_hurt=spr_standing_hurt;
+		crouched= spr_crouched;
+		get_up= spr_get_up;
+		leg_sweep=spr_leg_sweep;
+		head_kick=spr_combo_kick;
+		uppercut=spr_uppercut;
+		air_punch=spr_air_punch;
+		air_hurt=spr_air_hurt;
+		back_flip=spr_back_flip;
+		front_flip=spr_forward_flip;
+}
+else
+{
 
 switch global.player_one_choice
 
@@ -95,5 +115,7 @@ switch global.player_one_choice
 		break;
 	}
 	
+}
+
 }
 sprite_index=idle
