@@ -7,9 +7,5 @@ switch curr_stance_state
 		kneel();
 		break;
 	}
-	case stance_state.blocking:
-	{
-		kneel();
-		break;
-	}
+
 }

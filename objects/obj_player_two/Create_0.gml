@@ -4,6 +4,7 @@
 combo[0]=0; // Punch Punch Kick combo
 combo[1]=0; // Kick Kick
 flipped=false;
+shield_hp=1;
 enum two_stance_state
 {
 	standing,
@@ -42,6 +43,7 @@ if(!variable_global_exists("player_two_choice"))
 		front_flip=spr_forward_flip;
 		special_move=spr_special;
 		laser=spr_laser;
+		shield=spr_block_0;
 }
 
 else
@@ -69,7 +71,8 @@ switch global.player_two_choice
 		back_flip=spr_back_flip;
 		front_flip=spr_forward_flip;
 		special_move=spr_special;
-		laser=spr_laser;		
+		laser=spr_laser;
+		shield=spr_block_0;
 		break;
 	}
 	
@@ -93,6 +96,7 @@ switch global.player_two_choice
 		front_flip=spr_forward_flip_2;
 		special_move=spr_special_2;
 		laser=spr_laser_2;
+		shield=spr_block_2;
 		break;
 	}
 	
@@ -116,6 +120,7 @@ switch global.player_two_choice
 		front_flip=spr_forward_flip_1;
 		special_move=spr_special_1;
 		laser=spr_laser_1;
+		shield=spr_block_1;
 		break;
 	}
 	

@@ -117,11 +117,36 @@ switch curr_stance_state
 		break;
 	}
 	
+	case stance_state.blocking:
+	{
+		shield_hp-=.015;
+		if(shield_hp<=.30 || !keyboard_check(vk_shift))
+		{
+			curr_stance_state=stance_state.standing;
+			instance_destroy(obj_shield);
+			sprite_index=idle;
+		}
+		else {
+				with(obj_shield)
+	{
+		sprite_index=obj_player.shield;	
+		x=obj_player.x;
+		y=obj_player.y;
+		image_xscale=obj_player.shield_hp;
+		image_yscale=obj_player.shield_hp;
+		
+	}
+		}
 	
+	 break;	
+	}
 	
 }
 
+// shield regen
+if(shield_hp<1) shield_hp+=.005;
 
+if(shield_hp>1)shield_hp=1;
  
 
  if(left_stick_up)

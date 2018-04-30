@@ -30,10 +30,13 @@ switch curr_stance_state
 {
 	with(obj_player)
 	{
+		if(!instance_exists(obj_shield))
+		{
 		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=stance_state.hurting_high
 		sprite_index=standing_hurt;
 		alarm[5]=30*.5
+		}
 	}
 }
 	
@@ -51,10 +54,13 @@ audio_play_sound(sound_punch,2,false);
  {
  	with(obj_player)
  	{
+		if(!instance_exists(obj_shield))
+		{
 		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=stance_state.hurting_high		
  		sprite_index=standing_hurt;
  		alarm[5]=30*.5
+		}
  	}
  }
 
@@ -78,6 +84,8 @@ alarm[1]=30*.5; //time resets combos
 {
 	with(obj_player)
 	{
+		if(!instance_exists(obj_shield))
+		{
 		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
 		curr_stance_state=stance_state.hurting_fall
 		vspeed = -10;
@@ -87,6 +95,7 @@ alarm[1]=30*.5; //time resets combos
 		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
+		}
 	}
 }
 		
@@ -106,6 +115,8 @@ alarm[1]=30*.5; //time resets combos
 {
 	with(obj_player)
 	{
+		if(!instance_exists(obj_shield))
+		{
 		hit_landed(obj_battle_controller.combo,obj_battle_controller.combo_boost);
 		curr_stance_state=stance_state.hurting_fall
 		vspeed = -10;
@@ -114,6 +125,7 @@ alarm[1]=30*.5; //time resets combos
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
+		}
 	}
 }
 		

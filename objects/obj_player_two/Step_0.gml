@@ -108,9 +108,36 @@ switch curr_stance_state
 		break;
 	}
 	
+	
+	case two_stance_state.blocking:
+	{
+		shield_hp-=.015;
+		if(shield_hp<=.30 || !keyboard_check(vk_space))
+		{
+			curr_stance_state=two_stance_state.standing;
+			instance_destroy(obj_shield_two);
+			sprite_index=idle;
+		}
+		else {
+				with(obj_shield_two)
+	{
+	   	sprite_index=obj_player_two.shield;	
+		x=obj_player_two.x;
+		y=obj_player_two.y;
+		image_xscale=obj_player_two.shield_hp;
+		image_yscale=obj_player_two.shield_hp;
+		
+	}
+		}
+	
+	 break;	
+	}
+	
 }
 
+if(shield_hp<1) shield_hp+=.005;
 
+if(shield_hp>1)shield_hp=1;
  
  
  if(left_stick_up)

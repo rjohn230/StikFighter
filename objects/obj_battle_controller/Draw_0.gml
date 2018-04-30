@@ -39,6 +39,7 @@ player_energy_bar_end_yy= player_energy_bar_yy+20;
 draw_text(player_health_xx,player_health_yy,"HEALTH");
 draw_text(player_energy_xx,player_energy_yy,"ENERGY");
 
+
 // health Bar
 draw_healthbar(player_health_bar_xx,player_health_bar_yy,player_health_bar_end_xx,player_health_bar_end_yy,player_one_hp,c_black,c_red,c_green,0,true,true)
 
@@ -47,6 +48,38 @@ draw_healthbar(player_energy_bar_xx,player_energy_bar_yy,player_energy_bar_end_x
 
 // player one hud ended
 
+// shield bar for player one
+if(instance_exists(obj_player))
+{
+	player_one_x= obj_player.x;
+	player_one_y= obj_player.y;
+
+	
+	p1_shield_x1= player_one_x-22;
+	p1_shield_y1= player_one_y-42;
+	
+	p1_shield_x2= player_one_x+22;
+	p1_shield_y2= player_one_y-32;
+	
+	draw_healthbar(p1_shield_x1,p1_shield_y1,p1_shield_x2,p1_shield_y2,obj_player.shield_hp*100,c_black,c_red,c_yellow,0,true,true);
+	
+}
+
+if(instance_exists(obj_player_two))
+{
+	player_two_x= obj_player_two.x;
+	player_two_y= obj_player_two.y;
+
+	
+	p2_shield_x1= player_two_x-22;
+	p2_shield_y1= player_two_y-42;
+	
+	p2_shield_x2= player_two_x+22;
+	p2_shield_y2= player_two_y-32;
+	
+	draw_healthbar(p2_shield_x1,p2_shield_y1,p2_shield_x2,p2_shield_y2,obj_player_two.shield_hp*100,c_black,c_red,c_yellow,0,true,true);
+	
+}
 
 
 
