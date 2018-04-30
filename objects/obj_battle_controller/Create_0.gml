@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.start_round=false;
-global.player_one_wins=0;
-global.player_two_wins=0;
+
 // attacks
 
 reg_attack=5;
@@ -33,7 +32,7 @@ enum round_number
 }
 current_round=round_number.round_one
 
-round_time=90
+added_winner=false
 
 player_one_hp=100;
 player_one_energy=25;

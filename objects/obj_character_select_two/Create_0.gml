@@ -21,3 +21,9 @@ free=true;
 
 global.player_one_choice= choice_player.black_player;
 global.player_two_choice= choice_player.purple_player;
+if(!variable_global_exists("player_one_wins"))
+{
+global.player_one_wins=0;
+global.player_two_wins=0;	
+	
+}

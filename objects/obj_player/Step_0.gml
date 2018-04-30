@@ -210,3 +210,9 @@ if(left_flip)
 	 event_perform(ev_keypress,ord("P"));
 	
  }
+ 
+     if(gamepad_button_check(0,gp_shoulderrb))
+ {
+	 event_perform(ev_keyboard,vk_shift);
+	
+ }

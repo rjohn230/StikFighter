@@ -21,9 +21,20 @@ if(player_two_hp<=0)
 	audio_pause_sound(room_fight);
 	
 }
+if(variable_global_exists("player_one_wins"))
+{
+	if(!added_winner&& player_one_round_win>=2) 
+	{
+	global.player_one_wins+=1;
+	added_winner=true;
+	}
 
-
-
+	if(!added_winner&& player_two_round_win>=2) 
+	{
+	global.player_two_wins+=1;
+	added_winner=true;
+	}
+}
 
 someone_alive_or_DYING= instance_exists(obj_player) && instance_exists(obj_player_two) || instance_exists(obj_stick_fire)
 

@@ -19,6 +19,12 @@ c2y=lineY/6;
 draw_circle(c1x,c1y,100,true)
 draw_circle(c2x,c2y,100,true)
 
+// player one wins
+draw_text(c1x,c1y+300,string(global.player_one_wins));
+
+//player two wins
+draw_text(c2x,c2y+300,string(global.player_two_wins));
+
 
 switch player_one
 {

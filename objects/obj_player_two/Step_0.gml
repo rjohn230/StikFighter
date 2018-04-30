@@ -189,3 +189,9 @@ if(left_flip)
 	 event_perform(ev_keypress,ord("R"));
 	
  }
+ 
+      if(gamepad_button_check(1,gp_shoulderrb))
+ {
+	 event_perform(ev_keyboard,vk_space);
+	
+ }
