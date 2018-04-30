@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-audio_play_sound(sound_transition,3,false);
+audio_play_sound(sound_transition,6,false);
 switch choice
 {
 	case game_menu_options.restart:
