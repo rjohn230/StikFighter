@@ -2,7 +2,7 @@
     "id": "7f23074c-9dcf-4e4e-a86a-3eeb5c621c90",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object25",
+    "name": "obj_plane",
     "eventList": [
         {
             "id": "4632969f-5651-4b98-9bb6-b39fe789fd9c",
@@ -12,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "7f23074c-9dcf-4e4e-a86a-3eeb5c621c90"
+        },
+        {
+            "id": "e8500b14-b7ca-4a9e-ad34-2c3a9b670f79",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "7f23074c-9dcf-4e4e-a86a-3eeb5c621c90"
         }
     ],
