@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "f31d3acc-768e-4f8e-ab23-469034be1657",
+            "Value": {
+                "id": "4b296a36-1070-4e41-8f85-6f9759381edd",
+                "resourcePath": "tilesets\\pencil_mark\\pencil_mark.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "f38a8522-5eef-4acb-a33c-ce325a0d7fe7",
             "Value": {
                 "id": "d4c05099-8649-4ffb-875a-be9631d7ce28",
@@ -1236,6 +1244,14 @@
                 "id": "36c7b6bb-1811-4447-8dac-60671d1c1bcd",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f8623c1c-8e99-4fdd-8045-c4932905d85a",
+            "Value": {
+                "id": "5b385af9-b826-48ff-938b-5c3cbaee8603",
+                "resourcePath": "sprites\\spr_pencil_mark\\spr_pencil_mark.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
