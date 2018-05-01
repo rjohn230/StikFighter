@@ -78,6 +78,31 @@ if(player_one_ready)draw_text_color(lineX/3.5,lineY/2,"READY",c_white,c_white,c_
 draw_text_color(room_width*.65,lineY/3,"PLAYER TWO",c_white,c_white,c_white,c_white,1)
 if(player_two_ready)draw_text_color(room_width*.65,lineY/2,"READY",c_white,c_white,c_white,c_white,1)
 
+//draw map
+
+if(player_one_ready&& player_two_ready)
+{
+	switch map
+	{
+		case map_select.fire:
+		{
+			draw_text(obj_map.x,obj_map.y,"FIRE ROOM");
+			break;
+		}
+		case map_select.spike:
+		{
+			draw_text(obj_map.x,obj_map.y,"SPIKE ROOM");
+			break;
+		}
+		case map_select.warp:
+		{
+			draw_text(obj_map.x,obj_map.y,"WARP ROOM");
+			break;
+		}
+		
+		
+	}
+}
 
 //draw count down
 if(count_down)draw_text(room_width/2,lineY/1.4,string(number))

@@ -25,3 +25,28 @@ switch player_one
 	
 }
 }
+else if(player_two_ready)
+{
+	map_ready=false;
+	map_down=false;
+	switch map
+{
+	case map_select.fire:
+	{
+		map=map_select.warp
+	break;	
+	}
+	case map_select.spike:
+	{
+		map=map_select.fire
+	break;	
+	}
+	case map_select.warp:
+	{
+		map=map_select.spike
+	break;	
+	}
+	
+	
+}
+}

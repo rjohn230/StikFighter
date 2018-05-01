@@ -9,5 +9,24 @@ else
 	global.player_two_choice = player_two;
 	
 	timeline_loop=false;
-	room_goto(fire_room);
+		switch map
+{
+	case map_select.fire:
+	{
+		room_goto(fire_room)
+	break;	
+	}
+	case map_select.spike:
+	{
+		room_goto(spike_room)
+	break;	
+	}
+	case map_select.warp:
+	{
+		room_goto(warp_room)
+	break;	
+	}
+	
+	
+}
 }

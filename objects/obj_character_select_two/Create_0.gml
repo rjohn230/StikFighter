@@ -8,6 +8,18 @@ enum choice_player
 	red_player,
 	purple_player
 }
+enum map_select
+{
+	fire,
+	spike,
+	warp
+}
+map=map_select.fire;
+
+map_ready=false;
+map_down=false;
+
+
 
 player_one=choice_player.black_player
 player_two=choice_player.purple_player
