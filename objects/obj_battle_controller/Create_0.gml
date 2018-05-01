@@ -38,7 +38,7 @@ current_round=round_number.round_one
 added_winner=false
 
 player_one_hp=100;
-player_one_energy=100;
+player_one_energy=25;
 
 player_two_hp=100;
 player_two_energy=25;
@@ -48,3 +48,5 @@ player_one_round_win=0;
 player_two_round_win=0;
 
 match_over=false;
+
+alarm[1]=30*10;
