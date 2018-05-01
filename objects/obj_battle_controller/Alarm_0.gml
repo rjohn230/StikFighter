@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(star_power_p1) star_power_p1=false;	
 
-path_start(path_plane,8,path_action_stop,false)
-droped=false;
-//random loot
+if(star_power_p2) star_power_p2=false;

@@ -7,7 +7,8 @@
 
 //kill player
 
-player_one_energy=100;
+if(star_power_p1)player_one_energy=100;
+if(star_power_p2)player_two_energy=100;
 
 if(player_one_hp<=0) {
 	instance_destroy(obj_player);

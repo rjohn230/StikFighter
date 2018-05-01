@@ -8,6 +8,9 @@ reg_attack=5;
 finisher=reg_attack*5;
 combo=reg_attack*1.5;
 
+star_power_p1=false;
+star_power_p2=false;
+
 //energy boost
 reg_boost=5;
 combo_boost=reg_boost*1.7;
