@@ -49,4 +49,4 @@ player_two_round_win=0;
 
 match_over=false;
 
-alarm[1]=30*10;
+if(instance_exists(obj_dock))alarm[1]=30*10;
