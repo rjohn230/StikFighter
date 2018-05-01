@@ -47,7 +47,7 @@ else
 gravity=1;
 }
 
-
+if(vspeed>12)vspeed=12;
 
 //where the player faces
 if(instance_exists(obj_player_two)){

@@ -8,16 +8,17 @@
 //kill player
 
 
-
 if(player_one_hp<=0) {
 	instance_destroy(obj_player);
 	instance_destroy(obj_shield);
+	instance_destroy(obj_laser);
     audio_pause_sound(room_fight);
 }
 if(player_two_hp<=0)
 {
 	instance_destroy(obj_player_two);
 	instance_destroy(obj_shield_two);
+	instance_destroy(obj_laser);
 	audio_pause_sound(room_fight);
 	
 }
