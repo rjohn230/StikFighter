@@ -73,11 +73,13 @@ switch curr_stance_state
 		
 		if( (keyboard_check(ord("A")) || left_flip) && !flipped)
 		{
+			audio_play_sound(sound_jumping,2,false);
 			inairflip_two();
 			flipped=true;
 		}
 		else if( (keyboard_check(ord("D")) ||right_flip)  && !flipped)
 			{
+				audio_play_sound(sound_jumping,2,false);
 				inairflip_two();
 				flipped=true;
 			}

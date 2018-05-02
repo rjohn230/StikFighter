@@ -20,6 +20,7 @@ switch curr_stance_state
 	sprite_index=head_kick;
 	combo[0]=combo[0]+1;
 	strike_ready=false;
+	audio_play_sound(sound_punch,2,false);
 	
 	if(head_kick_landed)
 	{
@@ -36,6 +37,7 @@ switch curr_stance_state
 		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}	
 	}
@@ -49,6 +51,7 @@ switch curr_stance_state
 		sprite_index=side_kick;
 		combo[1]=combo[1]+1;
 		strike_ready=false;
+		audio_play_sound(sound_punch,2,false);
 		
 		if(side_kick_landed)//
 	{
@@ -64,6 +67,7 @@ switch curr_stance_state
 		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}	
 	}
@@ -88,6 +92,7 @@ switch curr_stance_state
 		curr_stance_state=stance_state.hurting_high
 		sprite_index=standing_hurt
 		alarm[5]=30*.75;
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}	
 	
@@ -113,6 +118,7 @@ switch curr_stance_state
 		
 		sprite_index=leg_sweep;
 		strike_ready=false;
+		audio_play_sound(sound_punch,2,false);
 		
 		
 		if(leg_sweep_landed)
@@ -129,6 +135,7 @@ switch curr_stance_state
 		timeline_position=0;
 		timeline_loop=true;
 		timeline_running=true;
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}	
 	}

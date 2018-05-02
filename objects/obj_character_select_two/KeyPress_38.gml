@@ -3,7 +3,7 @@
 /// @description Player One press up
 // You can write your code in this editor
 if(!player_one_ready)
-{
+{audio_play_sound(sound_transition,2,false);
 switch player_one
 {
 	case choice_player.black_player:
@@ -26,7 +26,7 @@ switch player_one
 }
 }
 else if(player_two_ready)
-{
+{audio_play_sound(sound_transition,2,false);
 	map_ready=false;
 	map_down=false;
 	switch map
@@ -36,14 +36,11 @@ else if(player_two_ready)
 		map=map_select.warp
 	break;	
 	}
-	case map_select.spike:
-	{
-		map=map_select.fire
-	break;	
-	}
+
+	
 	case map_select.warp:
 	{
-		map=map_select.spike
+		map=map_select.fire
 	break;	
 	}
 	

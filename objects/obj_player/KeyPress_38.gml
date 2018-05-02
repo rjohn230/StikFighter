@@ -12,6 +12,7 @@ switch curr_stance_state
 			
 			if (!not_block_bellow_you && global.start_round )
 					{
+						audio_play_sound(sound_jumping,2,false);
 						vspeed = -15;
 						curr_stance_state=stance_state.jumping;
 					}	

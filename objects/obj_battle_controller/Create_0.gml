@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 global.start_round=false;
-
+dying_done=false;
+dying_started=false;
 // attacks
 
 reg_attack=5;

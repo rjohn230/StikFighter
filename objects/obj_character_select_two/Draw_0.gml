@@ -89,11 +89,7 @@ if(player_one_ready&& player_two_ready)
 			draw_text(obj_map.x,obj_map.y,"FIRE ROOM");
 			break;
 		}
-		case map_select.spike:
-		{
-			draw_text(obj_map.x,obj_map.y,"SPIKE ROOM");
-			break;
-		}
+
 		case map_select.warp:
 		{
 			draw_text(obj_map.x,obj_map.y,"WARP ROOM");

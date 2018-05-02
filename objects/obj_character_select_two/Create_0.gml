@@ -11,7 +11,6 @@ enum choice_player
 enum map_select
 {
 	fire,
-	spike,
 	warp
 }
 map=map_select.fire;

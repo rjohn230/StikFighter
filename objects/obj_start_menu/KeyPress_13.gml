@@ -3,6 +3,7 @@
 /// @description Press Up
 // You can write your code in this editor
 audio_stop_sound(sound_menu);
+audio_play_sound(sound_select,2,false);
 switch choice
 {
 	case options.two_player:

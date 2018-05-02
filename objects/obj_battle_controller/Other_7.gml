@@ -4,24 +4,48 @@
 // kil burning player
 
 
-
+if(instance_exists(obj_tutorial_controller))
+{
+	if(player_one_hp<=50)player_one_hp=100;
+	if(player_two_hp<=50)player_two_hp=100;
+}
 //kill player
 
 if(star_power_p1)player_one_energy=100;
 if(star_power_p2)player_two_energy=100;
 
 if(player_one_hp<=0) {
+		if(!dying_started)
+		{
+			audio_play_sound(sound_dying,2,false);
+			alarm[2]=30*1.88;
+			dying_started=true;
+			player_one_dying()
+		}
+	if(dying_done)
+	{
 	instance_destroy(obj_player);
 	instance_destroy(obj_shield);
 	instance_destroy(obj_laser);
     audio_pause_sound(room_fight);
+	}
 }
 if(player_two_hp<=0)
 {
+		if(!dying_started)
+		{
+			audio_play_sound(sound_dying,2,false);
+			alarm[2]=30*1.88;
+			dying_started=true;
+			player_two_dying()
+		}
+	if(dying_done)
+	{
 	instance_destroy(obj_player_two);
 	instance_destroy(obj_shield_two);
 	instance_destroy(obj_laser);
 	audio_pause_sound(room_fight);
+	}
 	
 }
 if(variable_global_exists("player_one_wins"))
@@ -54,6 +78,9 @@ switch(current_round)
 		
 		count_down_round=3;
 		global.start_round=false;
+		dying_done=false;
+		dying_started=false;
+		
 		
 		if(instance_exists(obj_player)) instance_destroy(obj_player);
 		else instance_destroy(obj_player_two)
@@ -101,6 +128,9 @@ switch(current_round)
 		
 		count_down_round=3;
 		global.start_round=false;
+		dying_done=false;
+		dying_started=false;
+		
 		
 				if(instance_exists(obj_player)) instance_destroy(obj_player);
 		else instance_destroy(obj_player_two)

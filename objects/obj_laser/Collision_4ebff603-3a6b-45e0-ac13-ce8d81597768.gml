@@ -15,5 +15,6 @@ with(obj_battle_controller)
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
+		audio_play_sound(sound_hurt,2,false);
 	}
 

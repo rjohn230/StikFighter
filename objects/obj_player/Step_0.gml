@@ -82,11 +82,13 @@ switch curr_stance_state
 		if (  (keyboard_check(vk_left) ||left_flip ) && !flipped)
 		{
 			inairflip();
+			audio_play_sound(sound_jumping,2,false);
 			flipped=true;
 		}
 		else if( (keyboard_check(vk_right) || right_flip ) && !flipped)
 			{
 				inairflip();
+				audio_play_sound(sound_jumping,2,false);
 				flipped=true;
 			}
 		}

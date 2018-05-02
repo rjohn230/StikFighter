@@ -1,5 +1,5 @@
 if(!player_one_ready)
-{
+{audio_play_sound(sound_transition,2,false);
 switch player_one
 {
 	case choice_player.black_player:

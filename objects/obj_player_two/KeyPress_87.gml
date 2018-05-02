@@ -5,6 +5,7 @@ switch curr_stance_state
 	{
 		if (!not_block_bellow && global.start_round && !instance_place(x,y+1,obj_player))
 	{
+		audio_play_sound(sound_jumping,2,false);
 	vspeed = -15;
 	curr_stance_state=two_stance_state.jumping;
 	}

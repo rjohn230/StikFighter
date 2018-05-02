@@ -25,7 +25,7 @@ if(!droped)
 {
 	
 	
-	if(path_position>=.87) 
+	if(path_position>=.80) 
 	{
 		instance_create_layer(x,y,"Instances",obj_loot);
 		droped=true;

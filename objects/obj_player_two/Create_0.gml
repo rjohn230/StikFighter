@@ -44,6 +44,7 @@ if(!variable_global_exists("player_two_choice"))
 		special_move=spr_special;
 		laser=spr_laser;
 		shield=spr_block_0;
+		died=spr_died;
 }
 
 else
@@ -73,6 +74,7 @@ switch global.player_two_choice
 		special_move=spr_special;
 		laser=spr_laser;
 		shield=spr_block_0;
+		died=spr_died;
 		break;
 	}
 	
@@ -97,6 +99,7 @@ switch global.player_two_choice
 		special_move=spr_special_2;
 		laser=spr_laser_2;
 		shield=spr_block_2;
+		died=spr_died_2;
 		break;
 	}
 	
@@ -121,6 +124,7 @@ switch global.player_two_choice
 		special_move=spr_special_1;
 		laser=spr_laser_1;
 		shield=spr_block_1;
+		died=spr_died_1;
 		break;
 	}
 	

@@ -27,7 +27,8 @@ bottom_p2= p2.y>room_height && player_two_exist
 if(bottom_p1)
 {
 	p1.y=to.y;
-	p1.x=to.x;	
+	p1.x=to.x;
+	audio_play_sound(sound_teleportal,4,false);
 	with(obj_player)
 	{
 		hit_landed(obj_warp_controller.hit,obj_warp_controller.bon)
@@ -38,6 +39,7 @@ if(bottom_p2)
 {
 	p2.y=to.y;
 	p2.x=to.x;	
+	audio_play_sound(sound_teleportal,4,false);
 		with(obj_player_two)
 	{
 		hit_landed(obj_warp_controller.hit,obj_warp_controller.bon)
@@ -51,6 +53,7 @@ if(bottom_left_p1)
 {
 	p1.y=tr.y;
 	p1.x=tr.x;
+	audio_play_sound(sound_teleportal,4,false);
 		with(obj_player)
 	{
 		hit_landed(obj_warp_controller.hit,obj_warp_controller.bon)
@@ -82,6 +85,7 @@ if(bottom_right_p2)
 {
 	p2.y=tl.y;
 	p2.x=tl.x;	
+	audio_play_sound(sound_teleportal,4,false);
 			with(obj_player_two)
 	{
 		hit_landed(obj_warp_controller.hit,obj_warp_controller.bon)

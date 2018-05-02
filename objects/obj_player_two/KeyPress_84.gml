@@ -36,6 +36,7 @@ switch curr_stance_state
 		curr_stance_state=stance_state.hurting_high
 		sprite_index=standing_hurt;
 		alarm[5]=30*.5
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}
 }
@@ -60,11 +61,12 @@ audio_play_sound(sound_punch,2,false);
 		curr_stance_state=stance_state.hurting_high		
  		sprite_index=standing_hurt;
  		alarm[5]=30*.5
+		audio_play_sound(sound_hurt,4,false);
 		}
  	}
  }
 
-alarm[0]=30*.10; // time it stay in this sprite
+alarm[0]=30*.25; // time it stay in this sprite
 alarm[1]=30*.5; //time resets combos
 }
 
@@ -72,36 +74,9 @@ alarm[1]=30*.5; //time resets combos
 		break;
 	}
 	
-	case two_stance_state.jumping:
-	{
-		
-		sprite_index=air_punch;
-		strike_ready=false;
-		alarm[0]=30*.75// time to chain
-		audio_play_sound(sound_punch,2,false);
-		
-	if(jumping_punch_landed)
-{
-	with(obj_player)
-	{
-		if(!instance_exists(obj_shield))
-		{
-		hit_landed(obj_battle_controller.reg_attack,obj_battle_controller.reg_boost);
-		curr_stance_state=stance_state.hurting_fall
-		vspeed = -10;
-		hspeed= image_xscale*-5;
-		sprite_index=air_hurt;
-		timeline_index=time_if_done_falling_hurt
-		timeline_position=0;
-		timeline_loop=true;
-		timeline_running=true;
-		}
-	}
-}
-		
-		break;
-		
-	} 
+
+
+	
 	
 	case two_stance_state.kneeling:
 	{
@@ -125,6 +100,7 @@ alarm[1]=30*.5; //time resets combos
 		timeline_index=time_if_done_falling_hurt
 		timeline_loop=true;
 		timeline_running=true;
+		audio_play_sound(sound_hurt,4,false);
 		}
 	}
 }
